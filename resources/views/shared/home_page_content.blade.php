@@ -1,5 +1,5 @@
 <div id="homePageImage" >
-    <img src="img/wood_1200.jpg" alt="Los Angeles" style="width:100%;">
+    <img src="images/home.jpg" alt="Los Angeles" style="width:100%;">
 </div>
 <section class="bg-primary" id="services">
     <div class="container">
