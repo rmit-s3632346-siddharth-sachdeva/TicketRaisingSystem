@@ -1,0 +1,10 @@
+.aboutSection{
+    margin-bottom: 1%;
+}
+.navbar-default{
+    background-color: #3071a9;
+    border-color: #3071a9;
+}
+.navSection, .navbar-toggle{
+    color: white !important;
+}
