@@ -1,5 +1,5 @@
 
-@extends('main.master')
+@extends('shared.master')
 @section('title', 'Ticket Raising System')
 
 
