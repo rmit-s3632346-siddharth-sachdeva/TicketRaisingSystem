@@ -5,10 +5,6 @@
 
 <body>
 
-@include('shared.carousel');
-@include('shared.about');
-@include('shared.services');
-
-
+@include('shared.home_page_content');
 </body>
 
