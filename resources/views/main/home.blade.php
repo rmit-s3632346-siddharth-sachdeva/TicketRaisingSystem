@@ -4,7 +4,7 @@
 
 
 <body>
-
+@section('content')
 @include('shared.home_page_content');
 </body>
 
