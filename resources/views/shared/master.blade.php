@@ -11,7 +11,7 @@
 
 @yield('content')
 
-{{--@include('shared.footer')--}}
+@include('shared.footer')
 
 
 </body>
