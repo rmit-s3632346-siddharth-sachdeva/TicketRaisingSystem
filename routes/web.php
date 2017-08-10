@@ -18,3 +18,5 @@
 
 
 Route::get('/', 'HomeController@home');
+Route::get('/raise-ticket', 'RaiseTicketController@raiseTicket');
+Route::get('/create', 'RaiseTicketController@create');

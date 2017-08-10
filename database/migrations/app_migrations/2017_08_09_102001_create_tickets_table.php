@@ -18,7 +18,7 @@ class CreateTicketsTable extends Migration
             $table->string('user_id');
             $table->string('subject');
             $table->string('priority');
-            $table->string('department');
+            $table->string('service_area');
             $table->string('preferred_contact');
             $table->string('operating_system');
             $table->string('issue_description');
