@@ -16,7 +16,7 @@
                         Raise a ticket
                     </div>
                     <div class="col-sm-4 col-lg-4 col-md-4">
-                        hii
+                        Track your ticket
                     </div>
                 </div>
             </div>
