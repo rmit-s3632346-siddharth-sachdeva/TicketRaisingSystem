@@ -26,59 +26,59 @@
         @endif
         {!! Form::model($ticket, ['action' => 'RaiseTicketController@create'],['class' =>'form-horizontal']) !!}
         <div class="form-group">
-            {!! Form::label('name', 'Ticket ID',['class'=>'col-lg-2 control-label']) !!}
+            {!! Form::label('ticketIdLabel', 'Ticket ID',['class'=>'col-lg-2 control-label']) !!}
             <div class="col-lg-10">
-                {!! Form::text('name', '', ['class' => 'form-control'],array('disabled')) !!}
+                {!! Form::text('ticketIdInput', '', ['class' => 'form-control'],array('disabled')) !!}
             </div>
         </div>
         <div class="form-group">
-            {!! Form::label('name', 'User ID',['class'=>'col-lg-2 control-label']) !!}
+            {!! Form::label('userIdLabel', 'User ID',['class'=>'col-lg-2 control-label']) !!}
             <div class="col-lg-10">
-                {!! Form::text('name', '', ['class' => 'form-control']) !!}
+                {!! Form::text('userIdInput', '', ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="form-group">
-            {!! Form::label('name', 'Name',['class'=>'col-lg-2 control-label']) !!}
+            {!! Form::label('nameLabel', 'Name',['class'=>'col-lg-2 control-label']) !!}
             <div class="col-lg-10">
-                {!! Form::text('name', '', ['class' => 'form-control']) !!}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {!! Form::label('model', 'Subject',['class'=>'col-lg-2 control-label']) !!}
-            <div class="col-lg-10">
-                {!! Form::text('model', '', ['class' => 'form-control']) !!}
+                {!! Form::text('nameInput', '', ['class' => 'form-control']) !!}
             </div>
         </div>
 
         <div class="form-group">
-            {!! Form::label('priority', 'Priority',['class'=>'col-lg-2 control-label']) !!}
+            {!! Form::label('subjectLabel', 'Subject',['class'=>'col-lg-2 control-label']) !!}
             <div class="col-lg-10">
-                {!! Form::select('priority', ['H' => 'High', 'M' => 'Medium', 'L' => 'Low'], 'M',['class' => 'form-control']) !!}
+                {!! Form::text('subjectInput', '', ['class' => 'form-control']) !!}
+            </div>
+        </div>
+
+        <div class="form-group">
+            {!! Form::label('priorityLabel', 'Priority',['class'=>'col-lg-2 control-label']) !!}
+            <div class="col-lg-10">
+                {!! Form::select('prioritySelect', ['H' => 'High', 'M' => 'Medium', 'L' => 'Low'], 'M',['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="form-group">
-            {!! Form::label('serviceArea', 'Service Area',['class'=>'col-lg-2 control-label']) !!}
+            {!! Form::label('serviceAreaLabel', 'Service Area',['class'=>'col-lg-2 control-label']) !!}
             <div class="col-lg-10">
-                {!! Form::select('serviceArea', ['ITServices' =>'IT Services','WebServices'=>'Web services','BusinessSystem' => 'Business systems','ARG'=>'ARG'], '', ['class' => 'form-control']) !!}
+                {!! Form::select('serviceAreaSelect', ['ITServices' =>'IT Services','WebServices'=>'Web services','BusinessSystem' => 'Business systems','ARG'=>'ARG'], '', ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="form-group">
-            {!! Form::label('preferredContact', 'Preferred Contact',['class'=>'col-lg-2 control-label']) !!}
+            {!! Form::label('preferredContactLabel', 'Preferred Contact',['class'=>'col-lg-2 control-label']) !!}
             <div class="col-lg-10">
-                {!! Form::select('preferredContact', ['Email' => 'Email', 'Phone' => 'Phone'], '', ['class' => 'form-control']) !!}
+                {!! Form::select('preferredContactSelect', ['Email' => 'Email', 'Phone' => 'Phone'], '', ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="form-group">
-            {!! Form::label('operatingSystem', 'Operating System',['class'=>'col-lg-2 control-label']) !!}
+            {!! Form::label('operatingSystemLabel', 'Operating System',['class'=>'col-lg-2 control-label']) !!}
             <div class="col-lg-10">
-                {!! Form::text('operatingSystem', '', ['class' => 'form-control']) !!}
+                {!! Form::text('operatingSystemInput', '', ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="form-group">
-            {!! Form::label('issueDescription', 'Issue Description',['class'=>'col-lg-2 control-label']) !!}
+            {!! Form::label('issueDescriptionLabel', 'Issue Description',['class'=>'col-lg-2 control-label']) !!}
             <div class="col-lg-10">
-                {!! Form::text('issueDescription', '', ['class' => 'form-control']) !!}
+                {!! Form::textarea('issueDescriptionTextArea', '', ['class' => 'form-control']) !!}
             </div>
         </div>
 
