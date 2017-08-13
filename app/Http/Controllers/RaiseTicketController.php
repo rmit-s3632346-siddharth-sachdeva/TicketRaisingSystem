@@ -1,17 +1,31 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Model\Tickets;
+
+use App\Http\Requests\RaiseTicketFormRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Requests\ContactFormRequest;
+use Illuminate\Support\Facades\Session;
 
 class RaiseTicketController extends Controller
 {
-    public function raiseTicket(){
-        $ticket = new Tickets;
-        return view('main.raise_ticket',['ticket' => $ticket]);
+    public function raiseTicketCreate(){
+        return view('main.raise_ticket');
     }
 
-    public function create(Request $request){
+    public function raiseTicketStore(RaiseTicketFormRequest $request){
+        if($request->preferredContact ==  'Email'){
+            $contact = $request->emailId;
+        }
+        else if($request->preferredContact ==  'Phone'){
+            $contact = $request-> phoneNo;
+        }
 
+        session()->put('success', 'Thanks '.$request->name.' for contacting us, we will contact you via '.$request->preferredContact.' on '.$contact.' shortly.');
+
+        return Redirect::route('raiseTicket');
     }
 }
+?>
+

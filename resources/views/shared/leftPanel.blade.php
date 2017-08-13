@@ -1,5 +1,5 @@
 
-<div class="col-md-3 pull-md-left">
+
 
     <div class="panel panel-info">
         <div class="panel-heading">
@@ -23,4 +23,3 @@
         </div>
     </div>
 
-</div>

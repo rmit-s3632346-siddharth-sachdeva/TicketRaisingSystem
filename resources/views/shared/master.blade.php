@@ -1,14 +1,16 @@
 <html>
 <head>
-
     @include('shared.imports')
     <title>@yield('title')</title>
     @include('shared.header')
 </head>
 
-<body style="margin-top: 8%;">
-@yield('content')
-@include('shared.footer')
-</body>
+<body>
 
+@yield('content')
+
+</body>
+<footer>
+    @include('shared.footer')
+</footer>
 </html>
