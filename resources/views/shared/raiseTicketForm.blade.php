@@ -18,14 +18,14 @@
 
         {{session()->put('success', '')}}
 
-
-        {!! Form::open(array('route' => 'raiseTicket_store', 'class' => 'form')) !!}
+        {{--{!! Form::open(array('route' => 'raiseTicket_store', 'class' => 'form')) !!}--}}
+        {!! Form::model($ticket, ['route' => 'raiseTicket_store']) !!}
         <fieldset>
             <legend>Ticket Details</legend>
             <div class="form-group">
                 {!! Form::label('ticketId', 'Ticket ID',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
-                    {!! Form::text('ticketId', '', ['class' => 'form-control'/*, 'disabled'*/]) !!}
+                    {!! Form::text('ticketId', $ticketId, ['class' => 'form-control', 'readonly']) !!}
                 </div>
             </div>
             <div class="form-group">
@@ -55,6 +55,13 @@
             </div>
 
             <div class="form-group">
+                {!! Form::label('operatingSystem', 'OS',['class'=>'col-lg-2 control-label']) !!}
+                <div class="col-lg-10">
+                    {!! Form::text('operatingSystem', '', ['class' => 'form-control']) !!}
+                </div>
+            </div>
+
+            <div class="form-group">
                 {!! Form::label('priority', 'Priority',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
                     {!! Form::select('priority', ['H' => 'High', 'M' => 'Medium', 'L' => 'Low'], 'M',['class' => 'form-control']) !!}
@@ -63,7 +70,7 @@
             <div class="form-group">
                 {!! Form::label('serviceArea', 'Service Area',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
-                    {!! Form::select('serviceArea', ['ITServices' =>'IT Services','WebServices'=>'Web services','BusinessSystem' => 'Business systems','ARG'=>'ARG'], 'ITServices', ['class' => 'form-control']) !!}
+                    {!! Form::select('serviceArea', ['ITServices' =>'IT Services','WebServices'=>'Web services','BusinessSystem' => 'Business systems','ARG'=>'ARG'], 'WebServices', ['class' => 'form-control']) !!}
                 </div>
             </div>
 
@@ -71,6 +78,20 @@
                 {!! Form::label('preferredContact', 'Contact Via',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
                     {!! Form::select('preferredContact', ['Email' => 'Email', 'Phone' => 'Phone'], 'Email', ['class' => 'form-control']) !!}
+                </div>
+            </div>
+
+            <div class="form-group">
+                {!! Form::label('status', 'Status',['class'=>'col-lg-2 control-label']) !!}
+                <div class="col-lg-10">
+                    {!! Form::text('status', 'Pending', ['class' => 'form-control', 'readonly ']) !!}
+                </div>
+            </div>
+
+            <div class="form-group">
+                {!! Form::label('userId', 'User Id',['class'=>'col-lg-2 control-label']) !!}
+                <div class="col-lg-10">
+                    {!! Form::text('userId', '1', ['class' => 'form-control', 'readonly' ]) !!}
                 </div>
             </div>
 
@@ -86,6 +107,7 @@
                     {!! Form::file('attachment', '', ['class' => 'form-control']) !!}
                 </div>
             </div>
+
             <div>
             <button class="btn btn-success" type="submit">Raise Ticket</button>
             </div>
