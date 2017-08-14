@@ -1,22 +1,20 @@
 <?php
-
 namespace App\Http\Controllers;
-
+use Carbon\Carbon;
 use App\Http\Requests\RaiseTicketFormRequest;
+use App\Ticket;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\ContactFormRequest;
 use Illuminate\Support\Facades\Session;
-
 class RaiseTicketController extends Controller
 {
     public function raiseTicketCreate(){
-
+        $ticketId = uniqid();
+        $ticket = new Ticket();
         $emailId =  $_COOKIE['emailId'];
-
-        return view('main.raise_ticket', ['key'=>$emailId]);
+        return view('main.raise_ticket', ['ticket' => $ticket, 'ticketId' => $ticketId,'emailId'=>$emailId]);
     }
-
     public function raiseTicketStore(RaiseTicketFormRequest $request){
         if($request->preferredContact ==  'Email'){
             $contact = $request->emailId;
@@ -24,11 +22,9 @@ class RaiseTicketController extends Controller
         else if($request->preferredContact ==  'Phone'){
             $contact = $request-> phoneNo;
         }
-
         session()->put('success', 'Thanks '.$request->name.' for contacting us, we will contact you via '.$request->preferredContact.' on '.$contact.' shortly.');
-
+        Ticket::create($request->all());
         return Redirect::route('raiseTicket');
     }
 }
 ?>
-
