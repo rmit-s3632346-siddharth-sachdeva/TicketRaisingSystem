@@ -1,4 +1,4 @@
-
+<script src="js/raiseTicketCustomScript.js"></script>
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -18,8 +18,8 @@
                 <li>
                     <a class="page-scroll navSection" href="#services">Services</a>
                 </li>
-                <li>
-                    <a class="page-scroll navSection" >Login</a>
+                <li id="login">
+                    <a class="page-scroll navSection loginLink"  data-href="{{ URL::route('raiseTicket') }}"  >Login</a>
                 </li>
                 <li>
                     <a class="page-scroll navSection" href="#contact">Contact Us</a>

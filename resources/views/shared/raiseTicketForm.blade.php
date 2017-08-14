@@ -31,7 +31,7 @@
             <div class="form-group">
                 {!! Form::label('emailId', 'Email Id',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
-                    {!! Form::email('emailId', '', ['class' => 'form-control']) !!}
+                    {!! Form::email('emailId', $key, ['class' => 'form-control']) !!}
                 </div>
             </div>
             <div class="form-group">

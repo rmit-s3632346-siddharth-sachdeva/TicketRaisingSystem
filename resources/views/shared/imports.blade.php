@@ -4,6 +4,8 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
+<script src="js/bootbox.min.js"></script>
+
 {{--<link rel="stylesheet" href="fonts/font-awesome.min.css">--}}
 <link rel="stylesheet" href="fonts/fontawesome-webfont.woff2">
 <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.ttf">

@@ -1,8 +1,14 @@
+var emailId=''
 
+$(document).ready(function() {
+    $('#login').click(function(){
+        debugger;
+        bootbox.prompt("Please enter your email id", function(result){
+            var  emailId = result;
+            document.cookie = "emailId = " + emailId;
+            window.location.href = $(".loginLink").attr('data-href');
+        });
 
-window.jQuery(document).ready(function(){
-    bootbox.prompt("This is the default prompt!", function(result){
-        console.log(result);
     });
 
 });
