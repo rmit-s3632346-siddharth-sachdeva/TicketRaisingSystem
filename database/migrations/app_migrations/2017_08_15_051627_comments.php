@@ -17,10 +17,10 @@ class Comments extends Migration
             $table->string('commentId');
             $table->primary('commentId');
             $table->string('description');
-            $table->string('user_id');
-            $table->foreign('user_id')->references('email_id')->on('user_details')->onDelete('cascade');
-            $table->string('ticket_id');
-            $table->foreign('ticket_id')->references('ticket_id')->on('tickets')->onDelete('cascade');
+            $table->string('emailId');
+            $table->foreign('emailId')->references('emailId')->on('user_details')->onDelete('cascade');
+            $table->string('ticketId');
+            $table->foreign('ticketId')->references('ticketId')->on('tickets')->onDelete('cascade');
             $table->timestamps();
         });
     }

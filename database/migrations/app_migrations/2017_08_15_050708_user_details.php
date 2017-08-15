@@ -14,12 +14,12 @@ class UserDetails extends Migration
     public function up()
     {
         Schema::create('user_details', function (Blueprint $table) {
-            $table->string('email_id');
-            $table->primary('email_id');
+            $table->string('emailId');
+            $table->primary('emailId');
             $table->string('password');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('phone_number');
+            $table->string('firstName');
+            $table->string('lastName');
+            $table->string('phoneNo');
             $table->timestamps();
         });
     }
