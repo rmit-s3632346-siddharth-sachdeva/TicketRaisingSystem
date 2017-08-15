@@ -1,6 +1,5 @@
 <?php
 namespace App\Http\Controllers;
-use Carbon\Carbon;
 use App\Http\Requests\RaiseTicketFormRequest;
 use App\Ticket;
 use Illuminate\Http\Request;
@@ -22,7 +21,7 @@ class RaiseTicketController extends Controller
         else if($request->preferredContact ==  'Phone'){
             $contact = $request-> phoneNo;
         }
-        session()->put('success', 'Thanks '.$request->name.' for contacting us, we will contact you via '.$request->preferredContact.' on '.$contact.' shortly.');
+        session()->put('success', 'Thanks '.$request->firstName.' for contacting us, we will contact you via '.$request->preferredContact.' on '.$contact.' shortly.');
         Ticket::create($request->all());
         return Redirect::route('raiseTicket');
     }
