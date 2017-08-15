@@ -31,7 +31,7 @@
             <div class="form-group">
                 {!! Form::label('emailId', 'Email Id',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
-                    {!! Form::email('emailId', $emailId, ['class' => 'form-control', 'readonly']) !!}
+                    {!! Form::email('emailId', $emailId, ['class' => 'form-control']) !!}
                 </div>
             </div>
             <div class="form-group">
@@ -41,11 +41,19 @@
                 </div>
             </div>
             <div class="form-group">
-                {!! Form::label('name', 'Name',['class'=>'col-lg-2 control-label']) !!}
+                {!! Form::label('firstName', 'First Name',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
-                    {!! Form::text('name', '', ['class' => 'form-control']) !!}
+                    {!! Form::text('firstName', '', ['class' => 'form-control']) !!}
                 </div>
             </div>
+
+            <div class="form-group">
+                {!! Form::label('lastName', 'Last Name',['class'=>'col-lg-2 control-label']) !!}
+                <div class="col-lg-10">
+                    {!! Form::text('lastName', '', ['class' => 'form-control']) !!}
+                </div>
+            </div>
+
 
             <div class="form-group">
                 {!! Form::label('subject', 'Subject',['class'=>'col-lg-2 control-label']) !!}
@@ -87,14 +95,6 @@
                     {!! Form::text('status', 'Pending', ['class' => 'form-control', 'readonly ']) !!}
                 </div>
             </div>
-
-            <div class="form-group">
-                {!! Form::label('userId', 'User Id',['class'=>'col-lg-2 control-label']) !!}
-                <div class="col-lg-10">
-                    {!! Form::text('userId', '1', ['class' => 'form-control', 'readonly' ]) !!}
-                </div>
-            </div>
-
             <div class="form-group">
                 {!! Form::label('description', 'Description',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
