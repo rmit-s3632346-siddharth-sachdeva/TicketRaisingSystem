@@ -14,8 +14,8 @@ class UserDetails extends Migration
     public function up()
     {
         Schema::create('user_details', function (Blueprint $table) {
-            $table->increments('id');
             $table->string('email_id');
+            $table->primary('email_id');
             $table->string('password');
             $table->string('first_name');
             $table->string('last_name');
@@ -32,6 +32,5 @@ class UserDetails extends Migration
     public function down()
     {
         Schema::dropIfExists('user_details');
-
     }
 }

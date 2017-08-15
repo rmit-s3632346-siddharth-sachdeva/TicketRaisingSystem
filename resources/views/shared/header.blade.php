@@ -6,7 +6,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll navSection" href="/WDA/TicketRaisingSystem/public/" >Ticket Raising System</a>
+            <a class="navbar-brand page-scroll navSection" href="{{URL::route('home')}}" >Ticket Raising System</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -25,7 +25,7 @@
                     <a class="page-scroll navSection" href="#contact">Contact Us</a>
                 </li>
                 <li>
-                    <a class="page-scroll navSection" href="/WDA/TicketRaisingSystem/public/faqs">FAQs</a>
+                    <a class="page-scroll navSection" href="{{URL::route('faqs')}}">FAQs</a>
                 </li>
             </ul>
         </div>

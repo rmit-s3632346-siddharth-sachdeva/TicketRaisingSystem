@@ -14,12 +14,13 @@ class Comments extends Migration
     public function up()
     {
         Schema::create('comments', function (Blueprint $table) {
-            $table->increments('id');
+            $table->string('commentId');
+            $table->primary('commentId');
             $table->string('description');
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('user_details')->onDelete('cascade');
-            $table->integer('ticket_id')->unsigned();
-            $table->foreign('ticket_id')->references('id')->on('tickets')->onDelete('cascade');
+            $table->string('user_id');
+            $table->foreign('user_id')->references('email_id')->on('user_details')->onDelete('cascade');
+            $table->string('ticket_id');
+            $table->foreign('ticket_id')->references('ticket_id')->on('tickets')->onDelete('cascade');
             $table->timestamps();
         });
     }

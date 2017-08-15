@@ -14,7 +14,8 @@ class Tickets extends Migration
     public function up()
     {
         Schema::create('tickets', function (Blueprint $table) {
-            $table->increments('id');
+            $table->string('ticket_id');
+            $table->primary('ticket_id');
             $table->string('subject');
             $table->string('priority');
             $table->string('service_area');
@@ -24,9 +25,9 @@ class Tickets extends Migration
             $table->string('status');
             $table->timestamps();
 
-            $table->integer('user_Id')->unsigned();
+            $table->string('user_Id');
             $table->foreign('user_Id')
-                ->references('id')->on('user_details')
+                ->references('email_id')->on('user_details')
                 ->onDelete('cascade');
 
 
