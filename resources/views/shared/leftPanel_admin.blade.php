@@ -3,7 +3,7 @@
 
     <div class="panel panel-info">
         <div class="panel-heading">
-            <h3 class="panel-title">Your Recent Tickets</h3>
+            <h3 class="panel-title">Recently Raised Tickets</h3>
         </div>
         <div class="panel-body">
             <ul class="list-group ">
