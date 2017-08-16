@@ -18,8 +18,11 @@
                 <li>
                     <a class="page-scroll navSection" href="#services">Services</a>
                 </li>
-                <li id="login">
-                    <a class="page-scroll navSection loginLink"  data-href="{{ URL::route('raiseTicket') }}"  >Login</a>
+                <li id="viewTickets">
+                    <a class="page-scroll navSection viewTicketLink"  data-href="{{ URL::route('viewTickets') }}"  >View Tickets</a>
+                </li>
+                <li>
+                    <a class="page-scroll navSection" href="{{URL::route('raiseTicket')}}">Raise Ticket</a>
                 </li>
                 <li>
                     <a class="page-scroll navSection" href="#contact">Contact Us</a>
