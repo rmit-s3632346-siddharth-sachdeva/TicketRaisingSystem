@@ -7,7 +7,7 @@
             @include('shared.leftPanel')
         </div>
         <div class="col-md-9 col-lg-9 pull-md-right">
-            @include('shared.trackTicketsPanel');
+            @include('shared.trackTicketsPanel')
         </div>
     </div>
 
