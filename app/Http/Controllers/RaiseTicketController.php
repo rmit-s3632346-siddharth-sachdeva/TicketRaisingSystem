@@ -21,14 +21,8 @@ class RaiseTicketController extends Controller
         $ticketId = uniqid();
         $status = "Pending";
 
-        /*$result = UserDetails::where('emailId', '=', $request->emailId)->first();*/
-
-
-
         if(!UserDetails::where('emailId', '=', $request->emailId)->exists()){
-
             UserDetails::create(array_merge($request->all(), ['password'=>'password']));
-
         }
 
         if($request->preferredContact ==  'Email'){
