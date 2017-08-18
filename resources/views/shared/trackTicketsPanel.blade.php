@@ -64,7 +64,7 @@
                     <h3 class="panel-title">{{$comment->commentId}}</h3>
                 </div>
                 <div class="panel-body">
-                    <h1>{{$comment->emailId}}</h1>
+                    <p><b><u>{{$comment->emailId}}</u></b></p>
                     <p>{{$comment->description}}</p>
                 </div>
             </div>
