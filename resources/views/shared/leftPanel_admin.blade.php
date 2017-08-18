@@ -1,6 +1,3 @@
-
-
-
     <div class="panel panel-info">
         <div class="panel-heading">
             <h3 class="panel-title">Recently Raised Tickets</h3>
@@ -37,4 +34,3 @@
             {{--{!! $recentTickets->render() !!}--}}
         </div>
     </div>
-
