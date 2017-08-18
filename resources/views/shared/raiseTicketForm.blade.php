@@ -20,7 +20,7 @@
         {{session()->put('success', '')}}
 
         {{--{!! Form::open(array('route' => 'raiseTicket_store', 'class' => 'form')) !!}--}}
-        {!! Form::model($ticket, ['route' => 'raiseTicket_store']) !!}
+        {!! Form::model($ticket, ['route' => 'raiseTicket_store' , 'class' => 'form-horizontal']) !!}
         <fieldset>
             <legend>Ticket Details</legend>
 
