@@ -9,21 +9,27 @@ use Illuminate\Support\Facades\Session;
 class RaiseTicketController extends Controller
 {
     public function raiseTicketCreate(){
-        $ticketId = uniqid();
+
         $ticket = new Ticket();
 
 
-        return view('main.raise_ticket', ['ticket' => $ticket, 'ticketId' => $ticketId]);
+        return view('main.raise_ticket', ['ticket' => $ticket]);
     }
     public function raiseTicketStore(RaiseTicketFormRequest $request){
+
+        $ticketId = uniqid();
+        $status = "Pending";
         if($request->preferredContact ==  'Email'){
             $contact = $request->emailId;
         }
         else if($request->preferredContact ==  'Phone'){
             $contact = $request-> phoneNo;
         }
-        session()->put('success', 'Thanks '.$request->firstName.' for contacting us, we will contact you via '.$request->preferredContact.' on '.$contact.' shortly.');
-        Ticket::create($request->all());
+        session()->put('success', 'Thanks '.$request->firstName.' for contacting us, your ticket id is '.$ticketId.', we will contact you via '.$request->preferredContact.' on '.$contact.' shortly.');
+
+        Ticket::create(array_merge($request->all(),['ticketId'=>$ticketId, 'status'=>$status]));
+
+        /*Ticket::create($request->all());*/
         return Redirect::route('raiseTicket');
     }
 }

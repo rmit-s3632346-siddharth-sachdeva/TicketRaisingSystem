@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+{{--@include('main.flash-message')--}}
 @yield('content')
 
 </body>

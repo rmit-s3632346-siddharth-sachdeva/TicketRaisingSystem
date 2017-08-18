@@ -24,12 +24,12 @@ class RaiseTicketFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'ticketId' => 'required',
+            /*'ticketId' => 'required',*/
             'emailId' => 'required | email',
             'phoneNo' => 'required | min:9 | max:12',
             'firstName'  => 'required | alpha | max:20',
             'lastName'  => 'required | alpha | max:20',
-            'subject'  => 'required | max:30',
+            'subject'  => 'required | max:100',
             'priority'  => 'required',
             'serviceArea'  => 'required',
             'preferredContact'  => 'required',

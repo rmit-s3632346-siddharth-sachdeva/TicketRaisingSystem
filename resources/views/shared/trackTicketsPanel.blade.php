@@ -19,7 +19,6 @@
         </div>
         <div id="collapseOne" class="panel-collapse collapse ">
             <div class="panel-body">
-                {{--{!! Form::model($comment, ['route' => 'trackTicketComment_store']) !!}--}}
 
                 {!! Form::open(array('route' => 'viewTickets.store', 'method'=>'POST')) !!}
 

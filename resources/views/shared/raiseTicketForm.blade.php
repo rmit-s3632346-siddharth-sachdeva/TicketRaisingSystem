@@ -1,5 +1,6 @@
         @if (count($errors) > 0)
-            <div class="alert alert-danger">
+            <div class="alert alert-danger alert-block">
+                <button type="button" class="close" data-dismiss="alert">×</button>
                 <strong>Whoops!</strong> There were some problems with your input.<br><br>
                 <ul>
                     @foreach ($errors->all() as $error)
@@ -10,7 +11,8 @@
         @endif
 
         @if ($message = Session::get('success'))
-            <div class="alert alert-success">
+            <div class="alert alert-success alert-block">
+                <button type="button" class="close" data-dismiss="alert">×</button>
                 <p>{{ $message }}</p>
             </div>
         @endif
@@ -21,12 +23,7 @@
         {!! Form::model($ticket, ['route' => 'raiseTicket_store']) !!}
         <fieldset>
             <legend>Ticket Details</legend>
-            <div class="form-group">
-                {!! Form::label('ticketId', 'Ticket ID',['class'=>'col-lg-2 control-label']) !!}
-                <div class="col-lg-10">
-                    {!! Form::text('ticketId', $ticketId, ['class' => 'form-control', 'readonly']) !!}
-                </div>
-            </div>
+
             <div class="form-group">
                 {!! Form::label('emailId', 'Email Id',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
@@ -88,12 +85,12 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            {{--<div class="form-group">
                 {!! Form::label('status', 'Status',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
                     {!! Form::text('status', 'Pending', ['class' => 'form-control', 'readonly ']) !!}
                 </div>
-            </div>
+            </div>--}}
             <div class="form-group">
                 {!! Form::label('description', 'Description',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">

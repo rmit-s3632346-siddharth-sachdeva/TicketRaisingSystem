@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Session;
 
 class ViewTicketsController extends Controller
 {
-   /*public function viewTickets(Request $request){*/
+
     public function index(Request $request){
 
        $emailId =  $_COOKIE['emailId'];
@@ -18,14 +18,8 @@ class ViewTicketsController extends Controller
        /*var_dump($emailId);
         var_dump($ticketList);
         exit;*/
-       /*$ticketList = Ticket::where('ticketId', '=', '5992bb41d33c9')->get();*/
 
         $recentTickets = Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->limit(3)->get();
-
-       /*if(!Session::has('recentTickets')){
-           $recentTickets = $ticketList;
-           session()->put('recentTickets', $recentTickets);
-       }*/
 
        return view('main.view_tickets', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);
    }
