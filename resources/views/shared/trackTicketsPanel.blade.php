@@ -1,30 +1,46 @@
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
-    <legend>View Ticket #TicketId</legend>
+    <legend> #{{$ticket[0]->ticketId}} : {{$ticket[0]->subject}}</legend>
     <div class="panel panel-primary">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-comment">
+                <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne"><span class="glyphicon glyphicon-comment">
                             </span>Add Comment</a>
             </h4>
         </div>
         <div id="collapseOne" class="panel-collapse collapse ">
             <div class="panel-body">
-                {!! Form::model($comment, ['route' => 'trackTicketComment_store']) !!}
+                {{--{!! Form::model($comment, ['route' => 'trackTicketComment_store']) !!}--}}
+
+                {!! Form::open(array('route' => 'viewTickets.store', 'method'=>'POST')) !!}
+
+
                 <fieldset>
-                <div class="form-group">
-                    <label for="description" class="col-lg-2 control-label">Comment</label>
-                    <div class="col-lg-10">
-                        <textarea class="form-control" rows="3" id="description"></textarea>
+                    <div class="form-group">
+                        {!! Form::label('description', 'Description',['class'=>'col-lg-2 control-label']) !!}
+                        <div class="col-lg-10">
+                            {!! Form::textArea('description', '', ['class' => 'form-control']) !!}
+                        </div>
                     </div>
-                </div>
-                <div class="form-group" style="margin-top: 5%">
-                    <label for="inputAttachments" class="col-lg-2 control-label">Attachments</label>
-                    <div class="col-lg-10">
-                        <input type="file" name="attachments[]" id="inputAttachments" class="form-control">
+                    <div class="form-group">
+                        {!! Form::label('attachment', 'Attachments',['class'=>'col-lg-2 control-label']) !!}
+                        <div class="col-lg-10">
+                            {!! Form::file('attachment', '', ['class' => 'form-control']) !!}
+                        </div>
                     </div>
-                </div>
                 <div class="form-group">
+
                     <button class="btn btn-success" type="submit">Post</button>
+                    {{--<a class="btn btn-primary" href="{{ route('viewTickets.store',$ticket[0]) }}">Post</a>--}}
                 </div>
                 </fieldset>
                 {!! Form::close() !!}
@@ -37,9 +53,9 @@
             <h3 class="panel-title">Problem Description</h3>
         </div>
         <div class="panel-body">
-            @foreach($problemDescription as $description)
-                <p>{{$description}}</p>
-            @endforeach
+
+                <p>{{$ticket[0]->description}}</p>
+
         </div>
     </div>
     @if(count($commentList)>0)

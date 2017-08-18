@@ -11,9 +11,9 @@ class RaiseTicketController extends Controller
     public function raiseTicketCreate(){
         $ticketId = uniqid();
         $ticket = new Ticket();
-        $emailId =  $_COOKIE['emailId'];
 
-        return view('main.raise_ticket', ['ticket' => $ticket, 'ticketId' => $ticketId,'emailId'=>$emailId]);
+
+        return view('main.raise_ticket', ['ticket' => $ticket, 'ticketId' => $ticketId]);
     }
     public function raiseTicketStore(RaiseTicketFormRequest $request){
         if($request->preferredContact ==  'Email'){

@@ -1,4 +1,4 @@
-<script src="js/raiseTicketCustomScript.js"></script>
+<script src="{{URL::asset('js/raiseTicketCustomScript.js')}}"></script>
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -19,7 +19,7 @@
                     <a class="page-scroll navSection" href="#services">Services</a>
                 </li>
                 <li id="viewTickets">
-                    <a class="page-scroll navSection viewTicketLink"  data-href="{{ URL::route('viewTickets') }}"  >View Tickets</a>
+                    <a class="page-scroll navSection viewTicketLink"  data-href="{{route('viewTickets.index') }}{{--/WDA/TicketRaisingSystem/public/viewTickets--}}"  >View Tickets</a>
                 </li>
                 <li>
                     <a class="page-scroll navSection" href="{{URL::route('raiseTicket')}}">Raise Ticket</a>

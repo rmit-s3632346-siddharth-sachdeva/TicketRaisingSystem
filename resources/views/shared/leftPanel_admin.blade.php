@@ -19,12 +19,19 @@
                     <span class="badge">1</span>
                     Morbi leo risus
                 </li>--}}
-                @foreach(Session::get('recentTickets') as $ticket)
-                    <li class="list-group-item">
-                         {{ $ticket->ticketId}}
 
+                @if(count(Session::get('recentTicketsAdmin'))>0)
+                    @foreach(Session::get('recentTicketsAdmin') as $ticket)
+                        <li class="list-group-item">
+                            {{ $ticket->ticketId}}
+
+                        </li>
+                    @endforeach
+                @else
+                    <li class="list-group-item">
+                        No recent tickets
                     </li>
-                @endforeach
+                @endif
 
             </ul>
             {{--{!! $recentTickets->render() !!}--}}

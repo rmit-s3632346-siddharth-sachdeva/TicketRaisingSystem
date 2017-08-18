@@ -3,12 +3,21 @@
 Route::get('/', 'HomeController@getHomePage');
 Route::get('home', [ 'as' => 'home', 'uses' => 'HomeController@getHomePage']);
 Route::get('faqs', [ 'as' => 'faqs', 'uses' => 'FAQController@getFAQPage']);
+/*Route::get('/trackTickets',  ['as'=>'trackTickets','uses'=>'TrackTicketsController@trackTickets']);
+Route::get('/trackTickets', [ 'as' => 'trackTicketComment_store', 'uses' => 'TrackTicketsController@tractTicketCommentStore']);*/
 
-Route::get('/trackTickets',  ['as'=>'trackTickets','uses'=>'TrackTicketsController@trackTickets']);
-Route::get('/trackTickets', [ 'as' => 'trackTicketComment_store', 'uses' => 'TrackTicketsController@tractTicketCommentStore']);
+/*Route::get('/viewTickets', ['as'=>'viewTickets','uses'=>'ViewTicketsController@viewTickets']);*/
+Route::resource('/viewTickets', 'ViewTicketsController');
 
-Route::get('/viewTickets', ['as'=>'viewTickets','uses'=>'ViewTicketsController@viewTickets']);
+
 Route::get('/viewTicketsAdmin', ['as'=>'viewTicketsAdmin','uses'=> 'ViewTicketsController@viewTicketsAdmin']);
 Route::get('/raiseTicket',[ 'as' => 'raiseTicket', 'uses' => 'RaiseTicketController@raiseTicketCreate']);
 Route::post('/raiseTicket',[ 'as' => 'raiseTicket_store', 'uses' => 'RaiseTicketController@raiseTicketStore']);
 
+
+
+
+//Keep this rout in the end otherwise problem, as it reads in a sequence
+Route::get('{all}', function () {
+    return view('main.page_not_found');
+});

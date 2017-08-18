@@ -19,8 +19,8 @@
                     <span class="badge">1</span>
                     Morbi leo risus
                 </li>--}}
-                @if(count(Session::get('recentTickets'))>0)
-                    @foreach(Session::get('recentTickets') as $ticket)
+                @if(count($recentTickets)>0)
+                    @foreach($recentTickets as $ticket)
                         <li class="list-group-item">
                              {{ $ticket->ticketId}}
 
@@ -28,13 +28,12 @@
                     @endforeach
                 @else
                     <li class="list-group-item">
-                        No recent Tickets
+                        No recent tickets
                     </li>
                 @endif
 
 
             </ul>
-            {{--{!! $recentTickets->render() !!}--}}
         </div>
     </div>
 

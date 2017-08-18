@@ -26,14 +26,14 @@ class RaiseTicketFormRequest extends FormRequest
         return [
             'ticketId' => 'required',
             'emailId' => 'required | email',
-            'phoneNo' => 'required',
-            'firstName'  => 'required',
-            'lastName'  => 'required',
-            'subject'  => 'required',
+            'phoneNo' => 'required | min:9 | max:12',
+            'firstName'  => 'required | alpha | max:20',
+            'lastName'  => 'required | alpha | max:20',
+            'subject'  => 'required | max:30',
             'priority'  => 'required',
             'serviceArea'  => 'required',
             'preferredContact'  => 'required',
-            'description'  => 'required',
+            'description'  => 'required | max:200',
         ];
     }
 }

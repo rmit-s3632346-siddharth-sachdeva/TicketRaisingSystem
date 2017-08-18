@@ -10,7 +10,4 @@
             @include('shared.trackTicketsPanel')
         </div>
     </div>
-
-
-
 @endsection

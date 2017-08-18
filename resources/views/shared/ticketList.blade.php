@@ -22,8 +22,19 @@
                     <td>{{ $ticket->ticketId}}</td>
                     <td>{{ $ticket->subject}}</td>
                     <td>{{ $ticket->serviceArea}}</td>
-                    <td>{{ $ticket->priority}}</td>
+                    <td>
+                        @if($ticket->priority == 'H')
+                            High
+                            @elseif($ticket->priority == 'M')
+                            Medium
+                            @else
+                            Low
+                        @endif
+                    </td>
                     <td>{{ $ticket->status}}</td>
+                    <td><a class="btn btn-info" href="{{ route('viewTickets.show',$ticket->ticketId) }}">Show</a></td>
+                    <td><a class="btn btn-primary" href="{{--{{ route('productCRUD.edit',$product->id) }}--}}">Edit</a></td>
+                    <td>{!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}</td>
                 </tr>
                 @endforeach
                 </tbody>
