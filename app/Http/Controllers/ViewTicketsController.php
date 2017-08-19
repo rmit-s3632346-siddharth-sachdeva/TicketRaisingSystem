@@ -27,7 +27,7 @@ class ViewTicketsController extends Controller
 
     public function show($ticketId)
     {
-        $emailId =  $_COOKIE['emailId'];
+        $emailId =  Session::get('emailId');
         session()->put('ticketId', $ticketId);
         $ticket = Ticket::where('ticketId', '=', $ticketId)->get();
         $commentList = Comment::where('ticketId', '=', $ticketId)->get();
@@ -42,7 +42,7 @@ class ViewTicketsController extends Controller
             'description' => 'required',
         ]);
         $ticketId = Session::get('ticketId');
-        $emailId =  $_COOKIE['emailId'];
+        $emailId =  Session::get('emailId');
         $commentId = uniqid();
         Comment::create(array_merge($request->all(),['ticketId'=>$ticketId,'commentId'=>$commentId,'emailId'=>$emailId]));
         return redirect()->back();
