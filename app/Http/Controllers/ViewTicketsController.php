@@ -12,7 +12,7 @@ class ViewTicketsController extends Controller
 
     public function index(Request $request){
 
-       $emailId =  $_COOKIE['emailId'];
+       $emailId =  Session::get('emailId');
        $ticketList= Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->paginate(7);
 
      /*  var_dump($emailId);

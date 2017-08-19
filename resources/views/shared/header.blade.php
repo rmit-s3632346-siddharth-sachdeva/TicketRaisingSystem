@@ -1,4 +1,4 @@
-<script src="{{URL::asset('js/raiseTicketCustomScript.js')}}"></script>
+{{--<script src="{{URL::asset('js/raiseTicketCustomScript.js')}}"></script>--}}
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -13,13 +13,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll navSection" href="#about">About</a>
+                    <a class="page-scroll navsection" href="#about">about</a>
                 </li>
                 <li>
                     <a class="page-scroll navSection" href="#services">Services</a>
                 </li>
                 <li id="viewTickets">
-                    <a class="page-scroll navSection viewTicketLink"  data-href="{{route('viewTickets.index') }}{{--/WDA/TicketRaisingSystem/public/viewTickets--}}"  >View Tickets</a>
+                    <a class="page-scroll navSection viewTicketLink" data-target="#getEmailIdModal" data-toggle="modal"  >View Tickets</a>
                 </li>
                 <li>
                     <a class="page-scroll navSection" href="{{URL::route('raiseTicket')}}">Raise Ticket</a>
@@ -36,3 +36,32 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+<div id="getEmailIdModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Email Id:</h4>
+            </div>
+            <div class="modal-body">
+                {!! Form::open(array('route' => 'login_store', 'class' => 'form-horizontal')) !!}
+                <fieldset>
+                    <div class="form-group">
+                        {!! Form::label('emailId', 'Email Id',['class'=>'col-lg-2 control-label']) !!}
+                        <div class="col-lg-10">
+                            {!! Form::email('emailId', '', ['class' => 'form-control']) !!}
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </fieldset>
+                {!! Form::close() !!}
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+
+    </div>
+</div>
