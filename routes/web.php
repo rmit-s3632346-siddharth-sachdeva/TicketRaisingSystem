@@ -11,9 +11,11 @@ Route::get('/trackTickets', [ 'as' => 'trackTicketComment_store', 'uses' => 'Tra
 Route::resource('/viewTickets', 'ViewTicketsController');
 
 
-Route::get('/viewTicketsAdmin', ['as'=>'viewTicketsAdmin','uses'=> 'ViewTicketsController@viewTicketsAdmin']);
 Route::get('/raiseTicket',[ 'as' => 'raiseTicket', 'uses' => 'RaiseTicketController@raiseTicketCreate']);
 Route::post('/raiseTicket',[ 'as' => 'raiseTicket_store', 'uses' => 'RaiseTicketController@raiseTicketStore']);
+
+
+Route::post('/setEditable', [ 'as' => 'setEditable', 'uses' => 'ViewTicketsController@setEditable']);
 
 
 

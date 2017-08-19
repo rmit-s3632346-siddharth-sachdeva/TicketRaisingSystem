@@ -6,7 +6,7 @@
             @include('shared.leftPanel_admin')
         </div>
         <div class="col-md-9 col-lg-9 pull-md-right">
-            @include('shared.ticketList')
+            @include('shared.ticketList_admin')
         </div>
     </div>
 @endsection

@@ -22,7 +22,7 @@ class RaiseTicketController extends Controller
         $status = "Pending";
 
         if(!UserDetails::where('emailId', '=', $request->emailId)->exists()){
-            UserDetails::create(array_merge($request->all(), ['password'=>'password']));
+            UserDetails::create(array_merge($request->all(), ['password'=>'password', 'role'=>'user']));
         }
 
         if($request->preferredContact ==  'Email'){

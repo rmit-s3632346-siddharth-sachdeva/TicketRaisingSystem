@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\UserDetails;
 use Illuminate\Http\Request;
 use App\Ticket;
 use App\Comment;
@@ -11,17 +12,23 @@ class ViewTicketsController extends Controller
 {
 
     public function index(Request $request){
-
        $emailId =  Session::get('emailId');
-       $ticketList= Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->paginate(7);
 
-     /*  var_dump($emailId);
-        var_dump($ticketList);
-        exit;*/
+           /*var_dump($emailId);
+           exit;*/
 
-        $recentTickets = Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->limit(5)->get();
+       $role = UserDetails::where('emailId', '=', $emailId) ->pluck('role');
 
-       return view('main.view_tickets', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);
+       if(isset($role[0]) && $role[0] == 'admin'){
+           $ticketList= Ticket::orderBy('created_at','DESC')->paginate(7);
+           $recentTickets = Ticket::orderBy('created_at','DESC')->limit(5)->get();
+           return view('main.view_tickets_admin', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);
+       }else{
+           $ticketList= Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->paginate(7);
+           $recentTickets = Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->limit(5)->get();
+           return view('main.view_tickets', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);
+       }
+
    }
 
 
@@ -57,11 +64,10 @@ class ViewTicketsController extends Controller
 
 
         $status = Ticket::where('ticketId', $ticketId)->pluck('status');
-        /*var_dump($status[0]);*/
+
             if($status[0] == 'Closed'){
                 $newStatus = 'Pending';
             }else{
-
                 $newStatus = 'Closed';
             }
     /*    var_dump($newStatus);
@@ -72,17 +78,16 @@ class ViewTicketsController extends Controller
     }
 
 
+    public function setEditable(Request $request){
+        $ticket = json_decode($request->ticketObject, true);
 
-    public function viewTicketsAdmin(Request $request){
 
-        $ticketList= Ticket::orderBy('created_at','DESC')->paginate(5);
+/*        $ticket->setEditable = true;*/
 
-        if(!Session::has('recentTicketsAdmin')){
-            $recentTicketsAdmin = $ticketList;
-            session()->put('recentTicketsAdmin', $recentTicketsAdmin);
-        }
-
-        return view('main.view_tickets_admin', compact('ticketList')) ->with('i', ($request->input('page', 1) - 1) * 5);
+        var_dump($ticket);
+        var_dump($ticket[0]->ticketId);
+        /*echo 'id:'.$ticket->ticketId;*/
+        exit;
     }
 
 }
