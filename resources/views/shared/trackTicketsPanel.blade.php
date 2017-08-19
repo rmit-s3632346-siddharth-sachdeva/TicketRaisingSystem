@@ -27,7 +27,21 @@
                     <div class="form-group">
                         {!! Form::label('description', 'Description',['class'=>'col-lg-2 control-label']) !!}
                         <div class="col-lg-10">
+                            @if(Session::get('role') == 'admin')
+                            {!! Form::textArea('description', '
+
+
+
+
+----------------------------------
+Regards,
+Administrator | RMIT Support & Service
+RMIT University - Success begins here
+M: +61 411 333 222
+E: admin@rmit.edu.au', ['class' => 'form-control']) !!}
+                                @else
                             {!! Form::textArea('description', '', ['class' => 'form-control']) !!}
+                                @endif
                         </div>
                     </div>
                     <div class="form-group">
