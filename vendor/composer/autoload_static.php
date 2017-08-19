@@ -278,6 +278,7 @@ class ComposerStaticInit24bd426f95292078562eedbdbe448c8d
     );
 
     public static $classMap = array (
+        'AddRoleColumnInUserDetailsTable' => __DIR__ . '/../..' . '/database/migrations/2017_08_19_045350_add_role_column_in_user_details_table.php',
         'App\\Comment' => __DIR__ . '/../..' . '/app/Comment.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -290,6 +291,7 @@ class ComposerStaticInit24bd426f95292078562eedbdbe448c8d
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\RaiseTicketController' => __DIR__ . '/../..' . '/app/Http/Controllers/RaiseTicketController.php',
         'App\\Http\\Controllers\\TrackTicketsController' => __DIR__ . '/../..' . '/app/Http/Controllers/TrackTicketsController.php',
+        'App\\Http\\Controllers\\ViewTicketsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ViewTicketsController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -314,7 +316,7 @@ class ComposerStaticInit24bd426f95292078562eedbdbe448c8d
         'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
         'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
-        'Comments' => __DIR__ . '/../..' . '/database/migrations/2017_08_15_051627_comments.php',
+        'Comments' => __DIR__ . '/../..' . '/database/migrations/app_migrations/2017_08_15_051627_comments.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
