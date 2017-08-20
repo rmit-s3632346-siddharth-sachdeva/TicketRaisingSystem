@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Ticket;
 use App\Comment;
 use Illuminate\Support\Facades\Session;
+use App\Http\Requests\AddCommentRequest;
 
 class ViewTicketsController extends Controller
 {
@@ -44,11 +45,11 @@ class ViewTicketsController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(AddCommentRequest $request)
     {
-        $this->validate($request, [
+       /* $this->validate($request, [
             'description' => 'required',
-        ]);
+        ]);*/
         $ticketId = Session::get('ticketId');
         $emailId =  Session::get('emailId');
         $commentId = uniqid();
@@ -67,7 +68,7 @@ class ViewTicketsController extends Controller
         $status = Ticket::where('ticketId', $ticketId)->pluck('status');
 
             if($status[0] == 'Closed'){
-                $newStatus = 'Pending';
+                $newstatus = 'Pending';
             }else{
                 $newStatus = 'Closed';
             }
