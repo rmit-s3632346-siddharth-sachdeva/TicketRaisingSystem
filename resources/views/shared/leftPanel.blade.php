@@ -22,7 +22,7 @@
                 @if(count($recentTickets)>0)
                     @foreach($recentTickets as $ticket)
                         <li class="list-group-item">
-                             {{ $ticket->ticketId}}
+                             <a href = '{{route('viewTickets.show', $ticket->ticketId)}}'> {{ $ticket->ticketId}} </a>
 
                         </li>
                     @endforeach
