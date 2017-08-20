@@ -12,21 +12,26 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll navsection" href="#about">about</a>
-                </li>
-                <li>
-                    <a class="page-scroll navSection" href="#services">Services</a>
-                </li>
+
+                @if(\Request::is('/') || \Request::is('home') )
+                    <li>
+                        <a class="page-scroll navsection" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll navSection" href="#services">Services</a>
+                    </li>
+                @endif
                 <li id="viewTickets">
                     <a class="page-scroll navSection viewTicketLink" data-target="#getEmailIdModal" data-toggle="modal"  >View Tickets</a>
                 </li>
                 <li>
                     <a class="page-scroll navSection" href="{{URL::route('raiseTicket')}}">Raise Ticket</a>
                 </li>
-                <li>
-                    <a class="page-scroll navSection" href="#contact">Contact Us</a>
-                </li>
+                @if(\Request::is('/') || \Request::is('/home'))
+                    <li>
+                        <a class="page-scroll navSection" href="#contact">Contact Us</a>
+                    </li>
+                @endif
                 <li>
                     <a class="page-scroll navSection" href="{{URL::route('faqs')}}">FAQs</a>
                 </li>
@@ -54,7 +59,7 @@
                             {!! Form::email('emailId', '', ['class' => 'form-control']) !!}
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </fieldset>
                 {!! Form::close() !!}
             </div>

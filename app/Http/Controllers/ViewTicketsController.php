@@ -39,6 +39,7 @@ class ViewTicketsController extends Controller
         $ticket = Ticket::where('ticketId', '=', $ticketId)->get();
         $commentList = Comment::where('ticketId', '=', $ticketId)->get();
         $recentTickets = Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->limit(3)->get();
+
         return view('main.track_tickets',compact('ticket', 'commentList', 'recentTickets'));
     }
 
@@ -89,5 +90,9 @@ class ViewTicketsController extends Controller
         /*echo 'id:'.$ticket->ticketId;*/
         exit;
     }
-
+    public function edit(Request $request, $ticketId)
+    {
+        Ticket::where('ticketId', $ticketId)->update(array('status'=>$request->status));
+        return redirect()->back();
+    }
 }
