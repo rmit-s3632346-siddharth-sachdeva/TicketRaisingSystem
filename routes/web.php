@@ -2,24 +2,12 @@
 
 Route::get('/', 'HomeController@getHomePage');
 Route::get('home', [ 'as' => 'home', 'uses' => 'HomeController@getHomePage']);
-
 Route::get('faqs', [ 'as' => 'faqs', 'uses' => 'FAQController@getFAQPage']);
-/*Route::get('/trackTickets',  ['as'=>'trackTickets','uses'=>'TrackTicketsController@trackTickets']);
-Route::get('/trackTickets', [ 'as' => 'trackTicketComment_store', 'uses' => 'TrackTicketsController@tractTicketCommentStore']);*/
-
-/*Route::get('/viewTickets', ['as'=>'viewTickets','uses'=>'ViewTicketsController@viewTickets']);*/
 Route::resource('/viewTickets', 'ViewTicketsController');
-
-
 Route::get('/raiseTicket',[ 'as' => 'raiseTicket', 'uses' => 'RaiseTicketController@raiseTicketCreate']);
 Route::post('/raiseTicket',[ 'as' => 'raiseTicket_store', 'uses' => 'RaiseTicketController@raiseTicketStore']);
-
-
-Route::post('/search', [ 'as' => 'search', 'uses' => 'ViewTicketsController@search']);
-
-
-
 Route::post('/login', [ 'as' => 'login_store', 'uses' => 'LoginController@loginStore']);
+Route::post('/viewTickets', [ 'as' => 'search', 'uses' => 'ViewTicketsController@search']);
 
 
 
