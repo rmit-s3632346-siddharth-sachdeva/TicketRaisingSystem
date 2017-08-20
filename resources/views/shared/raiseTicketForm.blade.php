@@ -97,15 +97,10 @@
                     {!! Form::textArea('description', '', ['class' => 'form-control']) !!}
                 </div>
             </div>
-            <div class="form-group">
-                {!! Form::label('attachment', 'Attachments',['class'=>'col-lg-2 control-label']) !!}
-                <div class="col-lg-10">
-                    {!! Form::file('attachment', '', ['class' => 'form-control']) !!}
-                </div>
-            </div>
+
 
             <div>
-            <button class="btn btn-success" type="submit">Raise Ticket</button>
+            <button class="btn btn-success text-center center-block" type="submit">Raise Ticket</button>
             </div>
         </fieldset>
         {!! Form::close() !!}

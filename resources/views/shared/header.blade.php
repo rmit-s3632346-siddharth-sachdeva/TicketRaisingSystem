@@ -58,7 +58,7 @@
                             {!! Form::email('emailId', '', ['class' => 'form-control']) !!}
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success text-center center-block">Login</button>
                 </fieldset>
                 {!! Form::close() !!}
             </div>

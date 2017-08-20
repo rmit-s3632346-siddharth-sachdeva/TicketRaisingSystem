@@ -1,5 +1,5 @@
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover table-bordered">
                 <thead>
                 <tr class="info">
                     <th>Ticket Information</th>
@@ -37,6 +37,7 @@
 
                     </td>
                 </tr>
+                @if(Session::get('role') == 'admin')
                 <tr>
                     {!! Form::open(['route' => ['viewTickets.edit',$ticket[0]->ticketId],'method'=> 'GET' ,'class' => 'form-horizontal']) !!}
                     {{--{!! Form::open(['method' => 'DELETE','route' => ['productCRUD.destroy', $product->id],'style'=>'display:inline']) !!}--}}
@@ -48,6 +49,13 @@
                     <td><button class="btn btn-success" type="submit">Update Status</button></td>
                     {!! Form::close() !!}
                 </tr>
+                @else
+                    <tr>
+                        <td><b> <u>Status:</u></b></br>  {{$ticket[0]->status}} </td>
+
+                    </tr>
+                    @endif
+
                 </tbody>
             </table>
 

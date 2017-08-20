@@ -68,7 +68,7 @@ class ViewTicketsController extends Controller
         $status = Ticket::where('ticketId', $ticketId)->pluck('status');
 
             if($status[0] == 'Closed'){
-                $newstatus = 'Pending';
+                $newStatus = 'Pending';
             }else{
                 $newStatus = 'Closed';
             }
@@ -77,19 +77,6 @@ class ViewTicketsController extends Controller
         Ticket::where('ticketId', $ticketId)->update(array('status'=>$newStatus));
 
         return redirect()->route('viewTickets.index') ->with('success','Ticket '.$newStatus.' successfully');
-    }
-
-
-    public function setEditable(Request $request){
-        $ticket = json_decode($request->ticketObject, true);
-
-
-/*        $ticket->setEditable = true;*/
-
-        var_dump($ticket);
-        var_dump($ticket[0]->ticketId);
-        /*echo 'id:'.$ticket->ticketId;*/
-        exit;
     }
     public function edit(Request $request, $ticketId)
     {
