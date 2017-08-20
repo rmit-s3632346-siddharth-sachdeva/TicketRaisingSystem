@@ -24,12 +24,6 @@
                     {!! Form::submit('Search', ['class' => 'btn btn-warning btn-sm searchBtn']) !!}
                     {!! Form::close() !!}
 
-                    {{--<input type="search" class="form-control input-sm" style="color: black;"
-                           placeholder="Enter search term..."
-                           aria-controls="tableTicketsList">--}}
-                    {{--<a class="btn btn-default btn-sm searchBtn"> Search</a>--}}
-
-
 
                 </label></div>
             <div class="dataTables_info" id="tableTicketsList_info" role="status" aria-live="polite">Showing 0

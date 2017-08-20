@@ -1,11 +1,30 @@
+@if (count($errors) > 0)
+    <div class="alert alert-danger alert-block">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+
 <div class="table-container clearfix">
     <div id="tableTicketsList_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
         <div class="listtable">
             <div id="tableTicketsList_filter" class="dataTables_filter">
                 <label>
-                    <input type="search" class="form-control input-sm" placeholder="Enter search term..."
-                           aria-controls="tableTicketsList">
-                </label></div>
+
+                {!! Form::open(['route' =>'search' ,'style'=>'display:inline']) !!}
+
+                {!! Form::text('search', '', ['class' => 'form-control', 'style'=>'color: black;']) !!}
+
+                {!! Form::submit('Search', ['class' => 'btn btn-warning btn-sm searchBtn']) !!}
+                {!! Form::close() !!}
+                </label>
+            </div>
             <div class="dataTables_info" id="tableTicketsList_info" role="status" aria-live="polite">Showing 1 to 7
                 of {{$ticketList->total()}} entries
             </div>
