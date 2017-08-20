@@ -16,9 +16,8 @@
         <div class="listtable">
             <div id="tableTicketsList_filter" class="dataTables_filter">
                 <label>
-
-                {!! Form::open(['route' =>'search' ,'style'=>'display:inline']) !!}
-
+                    
+                    {!! Form::open(['action' =>'ViewTicketsController@search','method'=>'PATCH' ,'style'=>'display:inline']) !!}
                 {!! Form::text('search', '', ['class' => 'form-control', 'style'=>'color: black;']) !!}
 
                 {!! Form::submit('Search', ['class' => 'btn btn-warning btn-sm searchBtn']) !!}

@@ -13,6 +13,7 @@ class ViewTicketsController extends Controller
 {
 
     public function index(Request $request){
+
        $emailId =  Session::get('emailId');
 
            /*var_dump($emailId);
