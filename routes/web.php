@@ -7,7 +7,8 @@ Route::resource('/viewTickets', 'ViewTicketsController');
 Route::get('/raiseTicket',[ 'as' => 'raiseTicket', 'uses' => 'RaiseTicketController@raiseTicketCreate']);
 Route::post('/raiseTicket',[ 'as' => 'raiseTicket_store', 'uses' => 'RaiseTicketController@raiseTicketStore']);
 Route::post('/login', [ 'as' => 'login_store', 'uses' => 'LoginController@loginStore']);
-Route::post('/viewTickets', [ 'as' => 'search', 'uses' => 'ViewTicketsController@search']);
+/*Route::post('/viewTickets', [ 'as' => 'viewTickets.search', 'uses' => 'ViewTicketsController@search']);*/
+Route::patch('viewTickets', 'ViewTicketsController@search');
 
 
 
