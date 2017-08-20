@@ -3,8 +3,8 @@
         <div class="listtable">
             <div id="tableTicketsList_filter" class="dataTables_filter">
                 <label>
-                    <input type="search" class="form-control input-sm" placeholder="Enter search term..."
-                           aria-controls="tableTicketsList">
+                    <input type="search" class="form-control input-sm" style="color: black;" placeholder="Enter search term..."
+                           aria-controls="tableTicketsList"><a class="btn btn-default btn-sm searchBtn"> Search</a>
                 </label></div>
             <div class="dataTables_info" id="tableTicketsList_info" role="status" aria-live="polite">Showing 1 to 7
                 of {{$ticketList->total()}} entries

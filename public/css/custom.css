@@ -1,6 +1,10 @@
 .backgroundColorHome{
     background-color: #B92209;
 }
+.searchBtn{
+    height: 25px;
+    margin-left: 2% ;
+}
 .aboutSection{
     margin-bottom: 1%;
 }
