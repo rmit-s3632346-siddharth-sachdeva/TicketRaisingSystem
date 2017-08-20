@@ -13,3 +13,4 @@
 <link rel="stylesheet" href="{{URL::asset('fonts/glyphicons-halflings-regular.woff')}}">
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="icon" type="image/png" href=images/favicon.png" sizes="16x16">
