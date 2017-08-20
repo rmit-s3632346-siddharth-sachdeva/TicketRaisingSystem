@@ -15,7 +15,7 @@ Route::get('/raiseTicket',[ 'as' => 'raiseTicket', 'uses' => 'RaiseTicketControl
 Route::post('/raiseTicket',[ 'as' => 'raiseTicket_store', 'uses' => 'RaiseTicketController@raiseTicketStore']);
 
 
-Route::post('/setEditable', [ 'as' => 'setEditable', 'uses' => 'ViewTicketsController@setEditable']);
+Route::post('/search', [ 'as' => 'search', 'uses' => 'ViewTicketsController@search']);
 
 
 

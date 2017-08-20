@@ -83,4 +83,33 @@ class ViewTicketsController extends Controller
         Ticket::where('ticketId', $ticketId)->update(array('status'=>$request->status));
         return redirect()->back();
     }
+
+
+    public function search(Request $request){
+
+        $this->validate($request, [
+            'search' => 'required',
+
+        ]);
+
+        $ticketId = $request->search;
+        $emailId =  Session::get('emailId');
+        $role = UserDetails::where('emailId', '=', $emailId) ->pluck('role');
+
+        if(isset($role[0]) && $role[0] == 'admin'){
+            $ticketList= Ticket::orderBy('created_at','DESC')->where('ticketId', '=', $ticketId)->paginate(7);
+            $recentTickets = Ticket::orderBy('created_at','DESC')->limit(5)->get();
+            return view('main.view_tickets_admin', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);
+        }else{
+            $ticketList= Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->where('ticketId', '=', $ticketId)->paginate(7);
+            $recentTickets = Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->limit(5)->get();
+         /*   return view('main.view_tickets', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);*/
+
+          /*  return redirect()->back()->with('ticketList', $ticketList)->with('recentTickets', $recentTickets);*/
+
+            return view('main.view_tickets', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);
+        }
+
+    }
+
 }

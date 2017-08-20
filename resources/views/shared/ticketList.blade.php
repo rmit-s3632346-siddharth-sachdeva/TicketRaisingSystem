@@ -1,12 +1,39 @@
+@if (count($errors) > 0)
+    <div class="alert alert-danger alert-block">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
 <div class="table-container clearfix">
     <div id="tableTicketsList_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
         <div class="listtable">
             <div id="tableTicketsList_filter" class="dataTables_filter">
                 <label>
-                    <input type="search" class="form-control input-sm" style="color: black;" placeholder="Enter search term..."
-                           aria-controls="tableTicketsList"><a class="btn btn-default btn-sm searchBtn"> Search</a>
+
+
+                    {!! Form::open(['route' =>'search' ,'style'=>'display:inline']) !!}
+
+                        {!! Form::text('search', '', ['class' => 'form-control', 'style'=>'color: black;']) !!}
+
+                    {!! Form::submit('Search', ['class' => 'btn btn-warning btn-sm searchBtn']) !!}
+                    {!! Form::close() !!}
+
+                    {{--<input type="search" class="form-control input-sm" style="color: black;"
+                           placeholder="Enter search term..."
+                           aria-controls="tableTicketsList">--}}
+                    {{--<a class="btn btn-default btn-sm searchBtn"> Search</a>--}}
+
+
+
                 </label></div>
-            <div class="dataTables_info" id="tableTicketsList_info" role="status" aria-live="polite">Showing 1 to 7
+            <div class="dataTables_info" id="tableTicketsList_info" role="status" aria-live="polite">Showing 0
+                to {{$ticketList->count()}}
                 of {{$ticketList->total()}} entries
             </div>
             <table class="table table-striped table-hover table-list dataTable no-footer dtr-inline">
@@ -53,8 +80,6 @@
                                 {!! Form::submit('Close Ticket', ['class' => 'btn btn-success']) !!}</td>
 
                             {!! Form::close() !!}
-
-                            {{--                        {!! Form::model($ticket, ['method' => 'PATCH','route' => ['viewTickets.update', $ticket->ticketId]]) !!}--}}
 
 
                         @endif
