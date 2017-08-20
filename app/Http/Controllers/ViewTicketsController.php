@@ -67,7 +67,7 @@ class ViewTicketsController extends Controller
         $status = Ticket::where('ticketId', $ticketId)->pluck('status');
 
             if($status[0] == 'Closed'){
-                $newStatus = 'Pending';
+                $newstatus = 'Pending';
             }else{
                 $newStatus = 'Closed';
             }
