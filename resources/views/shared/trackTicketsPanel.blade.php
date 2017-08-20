@@ -18,8 +18,7 @@
     <div class="panel panel-primary">
     <div class="panel-heading">
         <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne"><span class="glyphicon glyphicon-comment">
-                            </span>Add Comment</a>
+            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne"><i class="fa fa-pencil-square-o" aria-hidden="true"> Add Comment</i></a>
         </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse ">
@@ -49,8 +48,8 @@
 </div>
 
 <div class="panel panel-danger">
-    <div class="panel-heading">
-        <h3 class="panel-title">Problem Description</h3>
+    <div class="panel-heading ">
+        <h3 class="panel-title "><i class="fa fa-info" aria-hidden="true"> Problem Description</i></h3>
     </div>
     <div class="panel-body">
 
@@ -62,7 +61,7 @@
     @foreach($commentList as $comment)
         <div class="panel panel-danger">
             <div class="panel-heading">
-                <h3 class="panel-title">{{$comment->commentId}}</h3>
+                <h3 class="panel-title"><i class="fa fa-comment" aria-hidden="true"> # {{$comment->commentId}}</i></h3>
             </div>
             <div class="panel-body">
                 <p><b><u>{{$comment->emailId}}</u></b></p>

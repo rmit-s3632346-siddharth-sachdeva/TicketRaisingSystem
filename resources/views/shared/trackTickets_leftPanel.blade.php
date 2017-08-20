@@ -2,14 +2,14 @@
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                 <tr class="info">
-                    <th>Ticket Information</th>
+                    <th> <i class="fa fa-info-circle" aria-hidden="true"> Ticket Information</i></th>
 
                 </tr>
                 </thead>
                 <tbody>
 
                 <tr>
-                    <td> <b> <u> {{$ticket[0]->subject}} </u></b>  </td>
+                    <td> <b> <u>Subject: </u></b></br>   {{$ticket[0]->subject}}   </td>
                 </tr>
                 <tr>
                     <td><b> <u>Service Area:</u></b> </br>  {{$ticket[0]->serviceArea}}</td>
