@@ -1,12 +1,13 @@
 <?php
 namespace App\Http\Controllers;
 use App\Http\Requests\RaiseTicketFormRequest;
+use App\Mail\TicketRaised;
 use App\Ticket;
 use App\UserDetails;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\ContactFormRequest;
-use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Mail;
+
 class RaiseTicketController extends Controller
 {
     public function raiseTicketCreate(){
@@ -35,7 +36,8 @@ class RaiseTicketController extends Controller
 
         Ticket::create(array_merge($request->all(),['ticketId'=>$ticketId, 'status'=>$status]));
 
-        /*Ticket::create($request->all());*/
+        Mail::to($request->emailId)->send(new TicketRaised($request,$ticketId));
+
         return Redirect::route('raiseTicket');
     }
 }
