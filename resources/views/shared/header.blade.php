@@ -28,7 +28,7 @@
                 </li>
                 @if(\Request::is('/') || \Request::is('/home'))
                     <li>
-                        <a class="page-scroll navSection" href="#contact">Contact Us</a>
+                        <a class="page-scroll navSection" href="#contactUs">Contact Us</a>
                     </li>
                 @endif
                 <li>

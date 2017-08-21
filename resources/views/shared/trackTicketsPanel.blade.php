@@ -24,7 +24,7 @@
     <div id="collapseOne" class="panel-collapse collapse ">
         <div class="panel-body">
 
-            {!! Form::open(array('route' => 'viewTickets.store', 'method'=>'POST')) !!}
+            {!! Form::open(array('route' => 'viewTickets.store', 'method'=>'POST','class'=>'form-horizontal')) !!}
 
 
             <fieldset>
@@ -36,7 +36,7 @@
 
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group text-center">
 
                     <button class="btn btn-success" type="submit">Post</button>
                     {{--<a class="btn btn-primary" href="{{ route('viewTickets.store',$ticket[0]) }}">Post</a>--}}
