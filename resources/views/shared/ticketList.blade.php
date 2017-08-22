@@ -26,8 +26,7 @@
 
 
                 </label></div>
-            <div class="dataTables_info" id="tableTicketsList_info" role="status" aria-live="polite">Showing 0
-                to {{$ticketList->count()}}
+            <div class="dataTables_info" id="tableTicketsList_info" role="status" aria-live="polite">Showing {{$ticketList->count()}}
                 of {{$ticketList->total()}} entries
             </div>
             <table class="table table-striped table-hover table-list dataTable no-footer dtr-inline">
