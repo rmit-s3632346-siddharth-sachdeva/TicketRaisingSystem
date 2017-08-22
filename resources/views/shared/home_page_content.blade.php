@@ -40,7 +40,8 @@
                 <h2 class="section-heading">About Us</h2>
                 <hr class="light">
                 <p class="text-faded">
-                    An issue tracking system (also ITS, trouble ticket system, support ticket, request management or incident ticket system) is a computer software package that manages and maintains lists of issues, as needed by an organization. Issue tracking systems are commonly used in an organization's customer support call center to create, update, and resolve reported customer issues, or even issues reported by that organization's other employees. A support ticket should include vital information for the account involved and the issue encountered. An issue tracking system often also contains a knowledge base containing information on each customer, resolutions to common problems, and other such data. An issue tracking system is similar to a "bugtracker", and often, a software company will sell both, and some bugtrackers are capable of being used as an issue tracking system, and vice versa. Consistent use of an issue or bug tracking system is considered one of the "hallmarks of a good software team.
+                    Information Technology Services (ITS) provides a range of IT services and support to the RMIT community. The services provided across the RMIT community vary in diversity and complexity, and include helpdesk and desktop support, ITS training, application support, computing facilities management and maintenance, project management and consulting services.</br>
+                    ITS is focused on proactively supporting RMIT by facilitating the effective use of ICT for the delivery of high quality teaching, learning, research, academic and administrative activities. In the information age, ITS recognises the important role that ICT services has in supporting RMIT's core business processes.
                 </p>
             </div>
         </div>
@@ -58,34 +59,22 @@
                         <div class="col-sm-6 col-lg-6 col-md-6">
 
                 <p>
-                <li>For critical issues - Phone : 0399258888</li>
-                <li>For non-urgent request and queries - Service and support portal</li>
-                <li>Walk-up support locations</li>
-                </p>
-
+                    ITS Reception</br>
+                    Postal address - Building 88 Level 10</br>
+                    City campus</br>
+                    440 Elizabeth Street</br>
+                    Melbourne</p>
             </div>
             <div class="col-sm-6 col-lg-6 col-md-6">
-                <b><u style="font-size: larger;"> Walk Up Support Locations</u></b>
-
-                <p><b><u>From 31 January - 2 December 2017</u></b></p>
-
-                <li>	Swanston Academic Building (SAB) – Building 80 Level 3 - Monday to Friday 8.00 am to 8.00 pm, Saturday 8.30 am to 4.30 pm</li>
-
-                <li>	Bundoora Library - Monday to Friday - 9.00 am to 5.00 pm</li>
-
-                <li>	Brunswick Library - Monday to Friday - 9.00 am to 5.00 pm</li>
-
-                <li>	Carlton Library - Monday to Friday - 11.00 am to 2.00 pm</li>
-
-                <li>	Swanston Library - Monday to Friday 10.00 am to 6.00 pm</li>
+                <p><li>Tel. +61 3 9925 8600</li>
+                <li>Fax: +61 3 9925 8988</li>
+                <li> Email: its.reception@rmit.edu.au</li></p>
 
 
             </div>
         </div>
 
-
-
-                </p>
+        </p>
             </div>
         </div>
     </div>

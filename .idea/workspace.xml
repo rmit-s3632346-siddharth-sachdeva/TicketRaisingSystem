@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf01da81-4edd-4d93-af29-c906740abc66" name="Default" comment="">
+    <list default="true" id="bf01da81-4edd-4d93-af29-c906740abc66" name="Default" comment="Minor u">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/serviceAndSupport1.jpg" afterPath="$PROJECT_DIR$/public/images/serviceAndSupport1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ViewTicketsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ViewTicketsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shared/ticketList_admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/shared/ticketList_admin.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/main/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/main/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shared/home_page_content.blade.php" afterPath="$PROJECT_DIR$/resources/views/shared/home_page_content.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,56 +18,43 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
-    <select />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ViewTicketsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ViewTicketsController.php">
+      <file leaf-file-name="home_page_content.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/shared/home_page_content.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#60#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticketList.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/shared/ticketList.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="19" column="128" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="128" />
+            <state relative-caret-position="213">
+              <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file leaf-file-name="track_tickets.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/main/track_tickets.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ticketList_admin.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/shared/ticketList_admin.blade.php">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/main/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/shared/header.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-212">
+              <caret line="30" column="74" lean-forward="false" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -94,21 +82,9 @@
       <find>cus</find>
       <find>c</find>
       <find>user</find>
-      <find>raiseticket</find>
-      <find>email</find>
-      <find>raiseTicketCus</find>
-      <find>raise</find>
-      <find>stat</find>
-      <find>`</find>
-      <find>index</find>
-      <find>area</find>
-      <find>cookie</find>
-      <find>Showing 1 to 7 of {{$ticketList-&gt;total()}} entries</find>
-      <find>driver</find>
-      <find>newsta</find>
-      <find>redirect</find>
-      <find>show</find>
-      <find>sear</find>
+      <find>$_COOKIE</find>
+      <find>desc</find>
+      <find>edit</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -116,31 +92,31 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php artisan migrate:reset --path=database/migrations/app_migrations" />
-      <command text="php artisan migrate:rollback --path=database/migrations/app_migrations" />
+      <command text="php artisan config:cache" />
       <command text="php artisan make:migration user_details" />
       <command text="php artisan migrate --path=database/migrations/app_migrations" />
-      <command text="php artisan make:migration ticckets" />
+      <command text="php artisan make:migration comments" />
+      <command text="php artisan migrate --path=database/migrations/app_migrations" />
+      <command text="php artisan make:migration user_details" />
+      <command text="php composer.phar dump-autoload -o" />
+      <command text="php artisan route:clear" />
+      <command text="php artisan cache:clear" />
+      <command text="php artisan config:cache" />
+      <command text="php artisan make:migration user_details" />
+      <command text="php artisan migrate --path=database/migrations/app_migrations" />
       <command text="php artisan make:migration tickets" />
       <command text="php artisan migrate --path=database/migrations/app_migrations" />
       <command text="php artisan make:migration comments" />
       <command text="php artisan migrate --path=database/migrations/app_migrations" />
-      <command text="factory(App\Models\UserDetails::class, 2)-&gt;create();" />
-      <command text="factory(App\UserDetails::class, 2)-&gt;create();" />
-      <command text="factory(App\Models\UserDetails::class, 10)-&gt;create();" />
-      <command text="php artisan tinker" />
-      <command text="factory(App\Models\User::class, 2)-&gt;create();" />
-      <command text="php artisan config:cache" />
-      <command text="php artisan route:clear" />
+      <command text="php artisan make:migration add_role_column_in_user_details_table" />
       <command text="php artisan migrate --path=database/migrations/app_migrations" />
-      <command text="php artisan make:controller ViewTicketsController" />
-      <command text="php artisan make:controller TicketCRUDController" />
+      <command text="php artisan make:controller LoginController" />
+      <command text="php artisan make:request AddCommentRequest" />
+      <command text="php artisan config:cache" />
+      <command text="php artisan routes" />
       <command text="php artisan route:list" />
       <command text="php artisan config:cache" />
-      <command text="php artisan migrate --path=database/migrations/app_migrations" />
-      <command text="php artisan make:mail TicketRaised" />
-      <command text="php artisan make:mail TicketUpdate" />
-      <command text="php artisan config:cache" />
+      <command text="php artisan route:list" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -149,57 +125,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_09_102001_create_tickets_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/main/home.blade.php" />
-        <option value="$PROJECT_DIR$/app/Model/Tickets.php" />
-        <option value="$PROJECT_DIR$/resources/views/main/faq.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/main/track_ticket.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/rightPanel.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/raiseTicketForm.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FAQController.php" />
-        <option value="$PROJECT_DIR$/resources/views/main/faqs.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_08_13_152415_create_user_details_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_08_13_153232_create_tickets_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_153232_create_tickets_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_154620_create_comments_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_161021_tickets.php" />
-        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_161353_comments.php" />
-        <option value="$PROJECT_DIR$/app/Models/UserDetails.php" />
-        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_160600_user_details.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/public/js/customScript.js" />
-        <option value="$PROJECT_DIR$/app/Models/Ticket.php" />
-        <option value="$PROJECT_DIR$/resources/views/main/viewTickets.blade.php" />
-        <option value="$PROJECT_DIR$/app/Ticket.php" />
-        <option value="$PROJECT_DIR$/public/js/raiseTicketCustomScript.js" />
-        <option value="$PROJECT_DIR$/resources/views/main/track_tickets.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/TrackTicketsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/main/temp.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/imports.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/Comment.php" />
         <option value="$PROJECT_DIR$/resources/views/main/raise_ticket.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Ticket.php" />
+        <option value="$PROJECT_DIR$/app/Ticket.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_161021_tickets.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_161353_comments.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_160600_user_details.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_14_053937_user_details.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_14_053215_tickets.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_14_053937_user_details.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_14_053215_tickets.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_14_055616_tickets.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_14_054908_user_details.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_14_055930_user_details.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_14_055616_tickets.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_14_060600_comments.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_15_050708_user_details.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_15_051109_tickets.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_15_051627_comments.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/RaiseTicketFormRequest.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/master.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/raiseTicketForm.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/main/view_tickets_admin.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/main/view_tickets.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/resources/views/shared/leftPanel.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/leftPanel_admin.blade.php" />
-        <option value="$PROJECT_DIR$/app/Mail/TicketRaised.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RaiseTicketController.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/trackTicketsPanel.blade.php" />
+        <option value="$PROJECT_DIR$/app/Comment.php" />
+        <option value="$PROJECT_DIR$/public/js/raiseTicketCustomScript.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TrackTicketsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/shared/pageNotFound.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/main/pageNotFound.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/main/page_not_found.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/app_migrations/2017_08_19_045350_add_role_column_in_user_details_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/resources/views/main/track_tickets_admin.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/shared/tickDetails_leftPanel_admin.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/AddCommentRequest.php" />
+        <option value="$PROJECT_DIR$/resources/views/shared/raiseTicketForm.blade.php" />
         <option value="$PROJECT_DIR$/app/UserDetails.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/email/TicketRaised.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/custom.css" />
+        <option value="$PROJECT_DIR$/resources/views/shared/ticketDetails_leftPanel_admin.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/main/track_tickets.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ViewTicketsController.php" />
+        <option value="$PROJECT_DIR$/public/css/custom.css" />
+        <option value="$PROJECT_DIR$/resources/views/shared/trackTickets_leftPanel.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/shared/imports.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/ResourceRegistrar.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/shared/ticketList.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/shared/ticketList_admin.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/shared/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/shared/trackTicketsPanel.blade.php" />
+        <option value="$PROJECT_DIR$/config/mail.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RaiseTicketController.php" />
+        <option value="$PROJECT_DIR$/resources/views/shared/home_page_content.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/main/home.blade.php" />
       </list>
     </option>
   </component>
@@ -289,10 +265,26 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3" />
-    <option name="y" value="2" />
-    <option name="width" value="638" />
-    <option name="height" value="430" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -309,50 +301,78 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="TicketRaisingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketRaisingSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="TicketRaisingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketRaisingSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="TicketRaisingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketRaisingSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Google Drive/RMIT Academics/Semester2/WDA/Week 5/Lecture/Lecture5_Laravel_4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TL5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\resources\views\shared" />
-      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\resources\views\main" />
-      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\public\js" />
-      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\public\fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\database\migrations\app_migrations" />
-      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\database\migrations" />
+      <recent name="D:\xampp\htdocs\WebDatabaseApplication\Assignment\database\migrations\app_migrations" />
+      <recent name="D:\xampp\htdocs\WebDatabaseApplication\Assignment\resources\views\main" />
+      <recent name="D:\xampp\htdocs\WebDatabaseApplication\Assignment\database\migrations" />
       <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\app" />
       <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\app\Http" />
-      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\WebDatabaseApplication\Assignment\public\images" />
+      <recent name="D:\xampp\htdocs\WebDatabaseApplication\Assignment\resources\views\shared" />
+      <recent name="D:\xampp\htdocs\WebDatabaseApplication\Assignment\resources\views\main" />
+      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\public\js" />
+      <recent name="C:\xampp\htdocs\WDA\TicketRaisingSystem\public\fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -368,7 +388,7 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Web Application.XAMP">
-    <configuration name="XAMP" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="XAMP" start_url="/WDA/TicketRaisingSystem/public/" />
+    <configuration name="XAMP" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="XAMP" start_url="/WebDatabaseApplication/Assignment/public" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -394,22 +414,19 @@
       <workItem from="1502501903732" duration="14019000" />
       <workItem from="1502531147824" duration="2104000" />
       <workItem from="1502637179366" duration="9279000" />
-      <workItem from="1502670770242" duration="8151000" />
-      <workItem from="1502771276939" duration="6491000" />
-      <workItem from="1502783679376" duration="5825000" />
-      <workItem from="1502877818223" duration="5810000" />
-      <workItem from="1502936878879" duration="4057000" />
-      <workItem from="1502953688579" duration="843000" />
-      <workItem from="1502955739015" duration="321000" />
-      <workItem from="1502964097190" duration="8923000" />
-      <workItem from="1503020512333" duration="11865000" />
-      <workItem from="1503067408782" duration="9004000" />
-      <workItem from="1503078067892" duration="1224000" />
-      <workItem from="1503118090202" duration="5919000" />
-      <workItem from="1503152850334" duration="7502000" />
-      <workItem from="1503193760967" duration="3797000" />
-      <workItem from="1503213119710" duration="21538000" />
-      <workItem from="1503242208400" duration="115000" />
+      <workItem from="1502670770242" duration="7516000" />
+      <workItem from="1502686581362" duration="4898000" />
+      <workItem from="1502771725411" duration="4605000" />
+      <workItem from="1502784066830" duration="2405000" />
+      <workItem from="1502878386391" duration="11284000" />
+      <workItem from="1502964832109" duration="2003000" />
+      <workItem from="1503021173616" duration="6206000" />
+      <workItem from="1503068937903" duration="1180000" />
+      <workItem from="1503112690262" duration="5004000" />
+      <workItem from="1503153203688" duration="5117000" />
+      <workItem from="1503193693833" duration="35091000" />
+      <workItem from="1503291648399" duration="4294000" />
+      <workItem from="1503382055174" duration="997000" />
     </task>
     <task id="LOCAL-00001" summary="Changes in master blade file.">
       <created>1502271948641</created>
@@ -467,144 +484,151 @@
       <option name="project" value="LOCAL" />
       <updated>1502645682549</updated>
     </task>
-    <task id="LOCAL-00009" summary="Raise ticket functionality">
-      <created>1502683070454</created>
+    <task id="LOCAL-00009" summary="Raise ticket form changes. bootbox added">
+      <created>1502687056710</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1502683070454</updated>
+      <updated>1502687056710</updated>
     </task>
-    <task id="LOCAL-00010" summary="html field added">
-      <created>1502774812525</created>
+    <task id="LOCAL-00010" summary="Routes related changes">
+      <created>1502771866330</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1502774812525</updated>
+      <updated>1502771866330</updated>
     </task>
-    <task id="LOCAL-00011" summary="View tickets functionality.">
-      <created>1502778254168</created>
+    <task id="LOCAL-00011" summary="New migrations">
+      <created>1502774479770</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1502778254168</updated>
+      <updated>1502774479771</updated>
     </task>
-    <task id="LOCAL-00012" summary="View tickets admin.">
-      <created>1502881892254</created>
+    <task id="LOCAL-00012" summary="last name added">
+      <created>1502775205944</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1502881892254</updated>
+      <updated>1502775205944</updated>
     </task>
-    <task id="LOCAL-00013" summary="Add comments functionality.">
-      <created>1503028882181</created>
+    <task id="LOCAL-00013" summary="Raise ticket form changes. bootbox added">
+      <created>1502890949959</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1503028882181</updated>
+      <updated>1502890949959</updated>
     </task>
-    <task id="LOCAL-00014" summary="Working on specs.">
-      <created>1503033760851</created>
+    <task id="LOCAL-00014" summary="Raise ticket form changes. bootbox added">
+      <created>1502966205847</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1503033760851</updated>
+      <updated>1502966205847</updated>
     </task>
-    <task id="LOCAL-00015" summary="Allowing non user to raise ticket. Behind the scenes creating a user account for a non user.">
-      <created>1503068384352</created>
+    <task id="LOCAL-00015" summary="Raise ticket form changes. bootbox added">
+      <created>1503069103111</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1503068384352</updated>
+      <updated>1503069103111</updated>
     </task>
-    <task id="LOCAL-00016" summary="Close ticket and re open ticket functionality.">
-      <created>1503079219548</created>
+    <task id="LOCAL-00016" summary="Raise ticket form changes. bootbox added">
+      <created>1503069123731</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1503079219548</updated>
+      <updated>1503069123731</updated>
     </task>
-    <task id="LOCAL-00017" summary="Some changes">
-      <created>1503158314076</created>
+    <task id="LOCAL-00017" summary="comments view changed">
+      <created>1503069346975</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1503158314092</updated>
+      <updated>1503069346975</updated>
     </task>
-    <task id="LOCAL-00018" summary="Auto signature for admin, mostly done, formatting left.">
-      <created>1503160354691</created>
+    <task id="LOCAL-00018" summary="role column migration file">
+      <created>1503118846284</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1503160354691</updated>
+      <updated>1503118846284</updated>
     </task>
-    <task id="LOCAL-00019" summary="Changes in recent tickets, now it is clickable; hyperlink.">
-      <created>1503194518028</created>
+    <task id="LOCAL-00019" summary="role column migration file">
+      <created>1503154827774</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1503194518028</updated>
+      <updated>1503154827774</updated>
     </task>
-    <task id="LOCAL-00020" summary="Table view changes">
-      <created>1503206517157</created>
+    <task id="LOCAL-00020" summary="modal changes">
+      <created>1503155258293</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1503206517157</updated>
+      <updated>1503155258293</updated>
     </task>
-    <task id="LOCAL-00021" summary="User role bug fixed.">
-      <created>1503222441917</created>
+    <task id="LOCAL-00021" summary="admin functionality added">
+      <created>1503206304486</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1503222441917</updated>
+      <updated>1503206304487</updated>
     </task>
-    <task id="LOCAL-00022" summary="Mail config">
-      <created>1503222929390</created>
+    <task id="LOCAL-00022" summary="home page corrected and un-necessary files removed">
+      <created>1503221136313</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1503222929390</updated>
+      <updated>1503221136313</updated>
     </task>
-    <task id="LOCAL-00023" summary="Formatting changes.">
-      <created>1503223276921</created>
+    <task id="LOCAL-00023" summary="Validation for comment added">
+      <created>1503221529205</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1503223276921</updated>
+      <updated>1503221529205</updated>
     </task>
-    <task id="LOCAL-00024" summary="Email html changes.">
-      <created>1503223342102</created>
+    <task id="LOCAL-00024" summary="Minor issues">
+      <created>1503224436982</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1503223342102</updated>
+      <updated>1503224436982</updated>
     </task>
-    <task id="LOCAL-00025" summary="Partial search functionality.">
-      <created>1503232821236</created>
+    <task id="LOCAL-00025" summary="Search Button added and about us added">
+      <created>1503225975937</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1503232821236</updated>
+      <updated>1503225975937</updated>
     </task>
-    <task id="LOCAL-00026" summary="Full search functionality.">
-      <created>1503233994355</created>
+    <task id="LOCAL-00026" summary="Favicons added">
+      <created>1503235478473</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1503233994355</updated>
+      <updated>1503235478473</updated>
     </task>
-    <task id="LOCAL-00027" summary="Full search functionality in admin pages as well.">
-      <created>1503234553651</created>
+    <task id="LOCAL-00027" summary="Minor u">
+      <created>1503239345372</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1503234553651</updated>
+      <updated>1503239345372</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Minor u">
+      <created>1503295916361</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1503295916361</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169797000" />
+    <option name="totallyTimeSpent" value="159012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,14 +640,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24670571" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49785176" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3625" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49570355" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07559055" sideWeight="0.49570355" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -634,10 +658,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.057954546" sideWeight="0.49785176" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28346458" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -645,21 +668,21 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3625" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41931817" sideWeight="0.49785176" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28346458" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07559055" sideWeight="0.49570355" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49570355" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2019334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31478772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,333 +692,381 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tickets model" />
     <MESSAGE value="Changes in master blade file." />
     <MESSAGE value="Increasing default string lengh." />
     <MESSAGE value="Laravel collective package." />
     <MESSAGE value="Raise Ticket functionality." />
     <MESSAGE value="Raise ticket form changes." />
-    <MESSAGE value="Raise ticket functionality" />
-    <MESSAGE value="Removing old migrations." />
-    <MESSAGE value="html field added" />
-    <MESSAGE value="View tickets functionality." />
-    <MESSAGE value="View tickets admin." />
-    <MESSAGE value="Add comments functionality." />
-    <MESSAGE value="Working on specs." />
-    <MESSAGE value="Allowing non user to raise ticket. Behind the scenes creating a user account for a non user." />
-    <MESSAGE value="Close ticket and re open ticket functionality." />
-    <MESSAGE value="Some changes" />
-    <MESSAGE value="Auto signature for admin, mostly done, formatting left." />
-    <MESSAGE value="Changes in recent tickets, now it is clickable; hyperlink." />
-    <MESSAGE value="Table view changes" />
-    <MESSAGE value="User role bug fixed." />
-    <MESSAGE value="Mail config" />
-    <MESSAGE value="Formatting changes." />
-    <MESSAGE value="Email html changes." />
-    <MESSAGE value="Partial search functionality." />
-    <MESSAGE value="Full search functionality." />
-    <MESSAGE value="Full search functionality in admin pages as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="Full search functionality in admin pages as well." />
+    <MESSAGE value="Routes related changes" />
+    <MESSAGE value="New migrations" />
+    <MESSAGE value="last name added" />
+    <MESSAGE value="Raise ticket form changes. bootbox added" />
+    <MESSAGE value="comments view changed" />
+    <MESSAGE value="role column migration file" />
+    <MESSAGE value="modal changes" />
+    <MESSAGE value="admin functionality added" />
+    <MESSAGE value="home page corrected and un-necessary files removed" />
+    <MESSAGE value="Validation for comment added" />
+    <MESSAGE value="Minor issues" />
+    <MESSAGE value="Search Button added and about us added" />
+    <MESSAGE value="Favicons added" />
+    <MESSAGE value="Minor u" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor u" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TrackTickets.php" />
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FAQController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/fonts/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="10" column="120159" lean-forward="false" selection-start-line="10" selection-start-column="120159" selection-end-line="10" selection-end-column="120159" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/main/faqs.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_152415_create_user_details_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_153232_create_tickets_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_154620_create_comments_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_161353_comments.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_160600_user_details.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery-1.11.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_13_161021_tickets.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_15_051627_comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_15_051109_tickets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="23">
+          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_15_050708_user_details.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_15_051627_comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/main/temp.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/imports.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+        <state relative-caret-position="136">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/raiseTicketCustomScript.js" />
-    <entry file="file://$PROJECT_DIR$/resources/views/main/raise_ticket.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="136">
+          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/shared/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/main/flash-message.blade.php" />
+    <entry file="file://$PROJECT_DIR$/public/js/raiseTicketCustomScript.js" />
+    <entry file="file://$PROJECT_DIR$/resources/views/main/page_not_found.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="86" lean-forward="false" selection-start-line="3" selection-start-column="86" selection-end-line="3" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/app_migrations/2017_08_19_045350_add_role_column_in_user_details_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TrackTicketsController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/main/track_tickets_admin.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/main/raise_ticket.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/main/view_tickets.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/main/view_tickets_admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/1.jpg" />
+    <entry file="file://$PROJECT_DIR$/public/images/404.jpg" />
+    <entry file="file://$PROJECT_DIR$/public/images/home.jpg" />
+    <entry file="file://$PROJECT_DIR$/public/images/background_image.jpg" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FAQController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/RaiseTicketFormRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/AddCommentRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Ticket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
+    <entry file="file://$PROJECT_DIR$/app/UserDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/raiseTicketForm.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="102" column="67" lean-forward="false" selection-start-line="102" selection-start-column="67" selection-end-line="102" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/leftPanel.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/imports.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/leftPanel_admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ViewTicketsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <marker date="1503291856754" expanded="true" signature="299:1213" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="359:395" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="527:834" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="840:1207" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="1252:1705" ph="{...}" />
+            <marker date="1503291856754" expanded="true" signature="1761:2209" ph="{...}" />
+            <marker date="1503291856754" expanded="true" signature="1777:1858" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="2267:2822" ph="{...}" />
+            <marker date="1503291856754" expanded="true" signature="2462:2515" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="2521:2573" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="2581:2620" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="2876:3012" ph="{...}" />
+            <marker date="1503291856754" expanded="true" signature="3086:3144" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="3097:3143" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="3361:3707" ph="..." />
+            <marker date="1503291856754" expanded="true" signature="3713:4376" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/ResourceRegistrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="20" column="98" lean-forward="false" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/trackTickets_leftPanel.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/ticketList_admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/ticketList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="19" column="94" lean-forward="false" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/main/faqs.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="120" column="0" lean-forward="true" selection-start-line="109" selection-start-column="23" selection-end-line="120" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/email/TicketRaised.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="phar://$PROJECT_DIR$/composer.phar/src/Composer/Command/ShowCommand.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/trackTicketsPanel.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="38" column="50" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/header.blade.php">
+    <entry file="file://$PROJECT_DIR$/config/services.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        <state relative-caret-position="482">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/main/view_tickets_admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TrackTicketsController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/leftPanel.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="24" column="118" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/main/view_tickets.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/leftPanel_admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/Ticket_Raising_System.iml">
+    <entry file="file://$PROJECT_DIR$/config/session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RaiseTicketController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="25" column="99" lean-forward="false" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="99" />
+        <state relative-caret-position="196">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1503295877881" expanded="true" signature="1386:1438" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/UserDetails.php">
+    <entry file="file://$PROJECT_DIR$/public/images/serviceAndSupport1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="90" lean-forward="false" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
+        <state relative-caret-position="-212">
+          <caret line="30" column="74" lean-forward="false" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/home_page_content.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/email/TicketRaised.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/TicketRaised.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/trackTicketsPanel.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/raiseTicketForm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="213">
+          <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/main/track_tickets.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/RaiseTicketFormRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ViewTicketsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/ticketList.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/main/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="128" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="128" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/ticketList_admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="34" />
           <folding />
         </state>
       </provider>

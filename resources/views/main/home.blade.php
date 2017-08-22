@@ -5,7 +5,7 @@
 
 <body>
 @section('content')
-@include('shared.home_page_content');
+@include('shared.home_page_content')
 @endsection
 </body>
 
