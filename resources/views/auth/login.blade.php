@@ -1,7 +1,7 @@
-@extends('layouts.app')
-
+@extends('shared.master')
+@section('title', 'Raise Ticket | Ticket Raising System')
 @section('content')
-<div class="container">
+<div class="container" style= "margin-top: 8%;">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">

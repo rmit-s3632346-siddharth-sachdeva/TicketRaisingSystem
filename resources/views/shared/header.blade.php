@@ -21,12 +21,14 @@
                         <a class="page-scroll navSection" href="#services">Services</a>
                     </li>
                 @endif
-                <li id="viewTickets">
-                    <a class="page-scroll navSection" href="{{URL::route('viewTickets.index')}}"  >View Tickets</a>
-                </li>
-                <li>
-                    <a class="page-scroll navSection" href="{{URL::route('raiseTicket')}}">Raise Ticket</a>
-                </li>
+                @if(!Auth::guest())
+                    <li id="viewTickets">
+                        <a class="page-scroll navSection" href="{{URL::route('viewTickets.index')}}"  >View Tickets</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll navSection" href="{{URL::route('raiseTicket')}}">Raise Ticket</a>
+                    </li>
+                @endif
                 @if(\Request::is('/') || \Request::is('/home'))
                     <li>
                         <a class="page-scroll navSection" href="#contactUs">Contact Us</a>
