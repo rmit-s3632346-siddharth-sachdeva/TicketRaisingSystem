@@ -15,19 +15,35 @@ use Illuminate\Http\Request;
 
 Route::group(['middleware' => 'cors'], function () {
 
-// List
+// Ticket List
     Route::get('ticketCRUD/list','TicketCRUDController@index');
 
-// Show
+// Ticket Show
     Route::get('ticketCRUD/{id}', 'TicketCRUDController@show');
 
-// Store
+// Ticket Store
     Route::post('ticketCRUD', 'TicketCRUDController@store');
 
-// Update
+// Ticket Update
     Route::post('ticketCRUD/{id}/update', 'TicketCRUDController@update');
 
-// Delete
+// Ticket Delete
     Route::get('ticketCRUD/{id}/delete', 'TicketCRUDController@destroy');
+
+// Comment List
+    Route::get('commentCRUD/list','CommentCRUDController@index');
+
+// Comment Show
+    Route::get('commentCRUD/{id}', 'CommentCRUDController@show');
+
+// Comment Store
+    Route::post('commentCRUD', 'CommentCRUDController@store');
+
+// Comment Update
+    Route::post('commentCRUD/{id}/update', 'CommentCRUDController@update');
+
+// Comment Delete
+    Route::get('commentCRUD/{id}/delete', 'CommentCRUDController@destroy');
+
 
 });
