@@ -13,6 +13,21 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['middleware' => 'cors'], function () {
+
+// List
+    Route::get('ticketCRUD/list','TicketCRUDController@index');
+
+// Show
+    Route::get('ticketCRUD/{id}', 'TicketCRUDController@show');
+
+// Store
+    Route::post('ticketCRUD', 'TicketCRUDController@store');
+
+// Update
+    Route::post('ticketCRUD/{id}/update', 'TicketCRUDController@update');
+
+// Delete
+    Route::get('ticketCRUD/{id}/delete', 'TicketCRUDController@destroy');
+
 });

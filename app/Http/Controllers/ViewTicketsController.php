@@ -16,9 +16,6 @@ class ViewTicketsController extends Controller
 
        $emailId =  Session::get('emailId');
 
-           /*var_dump($emailId);
-           exit;*/
-
        $role = UserDetails::where('emailId', '=', $emailId) ->pluck('role');
 
        if(isset($role[0]) && $role[0] == 'admin'){
