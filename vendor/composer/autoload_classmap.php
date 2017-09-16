@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddRememberTokenColumnInUserDetailsTable' => $baseDir . '/database/migrations/app_migrations/2017_09_15_114508_add_remember_token_column_in_user_details_table.php',
     'AddRoleColumnInUserDetailsTable' => $baseDir . '/database/migrations/app_migrations/2017_08_19_045350_add_role_column_in_user_details_table.php',
     'App\\Comment' => $baseDir . '/app/Comment.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
@@ -19,10 +20,8 @@ return array(
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\LoginController' => $baseDir . '/app/Http/Controllers/LoginController.php',
     'App\\Http\\Controllers\\RaiseTicketController' => $baseDir . '/app/Http/Controllers/RaiseTicketController.php',
-    'App\\Http\\Controllers\\TicketCRUDController' => $baseDir . '/app/Http/Controllers/TicketCRUDController.php',
     'App\\Http\\Controllers\\ViewTicketsController' => $baseDir . '/app/Http/Controllers/ViewTicketsController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
-    'App\\Http\\Middleware\\Cors' => $baseDir . '/app/Http/Middleware/Cors.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',

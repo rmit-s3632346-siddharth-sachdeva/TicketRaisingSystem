@@ -21,7 +21,7 @@
                     </li>
                 @endif
                 <li id="viewTickets">
-                    <a class="page-scroll navSection viewTicketLink" data-target="#getEmailIdModal" data-toggle="modal"  >View Tickets</a>
+                    <a class="page-scroll navSection" href="{{URL::route('viewTickets.index')}}"  >View Tickets</a>
                 </li>
                 <li>
                     <a class="page-scroll navSection" href="{{URL::route('raiseTicket')}}">Raise Ticket</a>
@@ -40,6 +40,7 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+{{--
 <div id="getEmailIdModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
@@ -68,4 +69,4 @@
         </div>
 
     </div>
-</div>
+</div>--}}

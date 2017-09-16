@@ -8,13 +8,20 @@ use App\Ticket;
 use App\Comment;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\AddCommentRequest;
+use Illuminate\Support\Facades\Auth;
+
 
 class ViewTicketsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function index(Request $request){
 
-       $emailId =  Session::get('emailId');
+       // $emailId =  Session::get('emailId');
+        $emailId =  Auth::id();
 
        $role = UserDetails::where('emailId', '=', $emailId) ->pluck('role');
 
@@ -33,7 +40,8 @@ class ViewTicketsController extends Controller
 
     public function show($ticketId)
     {
-        $emailId =  Session::get('emailId');
+      //  $emailId =  Session::get('emailId');
+        $emailId =  Auth::id();
         session()->put('ticketId', $ticketId);
         $ticket = Ticket::where('ticketId', '=', $ticketId)->get();
         $commentList = Comment::where('ticketId', '=', $ticketId)->get();
@@ -49,7 +57,8 @@ class ViewTicketsController extends Controller
             'description' => 'required',
         ]);*/
         $ticketId = Session::get('ticketId');
-        $emailId =  Session::get('emailId');
+        $emailId =  Auth::id();
+        //$emailId =  Session::get('emailId');
         $commentId = uniqid();
         Comment::create(array_merge($request->all(),['ticketId'=>$ticketId,'commentId'=>$commentId,'emailId'=>$emailId]));
         return redirect()->back();
@@ -91,7 +100,8 @@ class ViewTicketsController extends Controller
         ]);
 
         $ticketId = $request->search;
-        $emailId =  Session::get('emailId');
+       // $emailId =  Session::get('emailId');
+        $emailId =  Auth::id();
         $role = UserDetails::where('emailId', '=', $emailId) ->pluck('role');
 
         if(isset($role[0]) && $role[0] == 'admin'){

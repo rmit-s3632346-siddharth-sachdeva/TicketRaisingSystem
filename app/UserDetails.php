@@ -1,12 +1,19 @@
 <?php
 
 namespace App;
+use Illuminate\Notifications\Notifiable;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class UserDetails extends Model
+class UserDetails extends Authenticatable
 {
-    protected $table = 'user_details';
-    protected $fillable = ['emailId', 'password','firstName', 'lastName', 'phoneNo', 'role'];
+    use Notifiable;
 
+    protected $table = 'user_details';
+    protected $primaryKey = "emailId";
+    public $incrementing = false;
+    protected $fillable = ['emailId', 'password','firstName', 'lastName', 'phoneNo', 'role'];
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 }

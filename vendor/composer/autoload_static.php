@@ -278,6 +278,7 @@ class ComposerStaticInit24bd426f95292078562eedbdbe448c8d
     );
 
     public static $classMap = array (
+        'AddRememberTokenColumnInUserDetailsTable' => __DIR__ . '/../..' . '/database/migrations/app_migrations/2017_09_15_114508_add_remember_token_column_in_user_details_table.php',
         'AddRoleColumnInUserDetailsTable' => __DIR__ . '/../..' . '/database/migrations/app_migrations/2017_08_19_045350_add_role_column_in_user_details_table.php',
         'App\\Comment' => __DIR__ . '/../..' . '/app/Comment.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
@@ -291,10 +292,8 @@ class ComposerStaticInit24bd426f95292078562eedbdbe448c8d
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/LoginController.php',
         'App\\Http\\Controllers\\RaiseTicketController' => __DIR__ . '/../..' . '/app/Http/Controllers/RaiseTicketController.php',
-        'App\\Http\\Controllers\\TicketCRUDController' => __DIR__ . '/../..' . '/app/Http/Controllers/TicketCRUDController.php',
         'App\\Http\\Controllers\\ViewTicketsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ViewTicketsController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
-        'App\\Http\\Middleware\\Cors' => __DIR__ . '/../..' . '/app/Http/Middleware/Cors.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
