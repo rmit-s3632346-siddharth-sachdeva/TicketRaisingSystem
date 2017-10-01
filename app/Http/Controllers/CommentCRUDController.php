@@ -25,7 +25,9 @@ class CommentCRUDController extends Controller
             $saved = $comment->save();
 
             if(!$saved){
-                return array("status" => "ERROR");
+                return array("response_status" => "ERROR");
+            }else{
+                return array("response_status" => "SUCCESS");
             }
         }
 

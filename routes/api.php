@@ -13,7 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
+
+
 Route::group(['middleware' => 'cors'], function () {
+
+
+    //Route::middleware('cors')->get('ticketCRUD', 'TicketCRUDController@fetch');
 
 // Ticket List
     Route::get('ticketCRUD/list','TicketCRUDController@index');

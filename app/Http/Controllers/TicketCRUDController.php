@@ -63,14 +63,14 @@ class TicketCRUDController extends Controller
             $saved = $ticket->save();
 
             if(!$saved){
-                return array("status" => "ERROR");
+                return array("response_status" => "ERROR");
             }
         }
         catch(Exception $e) {
-            return array("status" => "ERROR");
+            return array("response_status" => "ERROR");
         }
 
-        return array("status" => "SUCCESS");;
+        return array("response_status" => "SUCCESS");;
     }
 
     public function destroy($id)
