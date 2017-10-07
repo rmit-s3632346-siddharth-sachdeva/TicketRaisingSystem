@@ -15,7 +15,7 @@
 
 
 
-    <div class="panel panel-primary">
+   {{-- <div class="panel panel-primary">
     <div class="panel-heading">
         <h4 class="panel-title">
             <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne"><i class="fa fa-pencil-square-o" aria-hidden="true"> Add Comment</i></a>
@@ -39,13 +39,13 @@
                 <div class="form-group text-center">
 
                     <button class="btn btn-success" type="submit">Post</button>
-                    {{--<a class="btn btn-primary" href="{{ route('viewTickets.store',$ticket[0]) }}">Post</a>--}}
+                    --}}{{--<a class="btn btn-primary" href="{{ route('viewTickets.store',$ticket[0]) }}">Post</a>--}}{{--
                 </div>
             </fieldset>
             {!! Form::close() !!}
         </div>
     </div>
-</div>
+</div>--}}
 
 <div class="panel panel-danger">
     <div class="panel-heading ">
