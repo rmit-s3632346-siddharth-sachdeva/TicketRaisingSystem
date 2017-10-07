@@ -50,5 +50,8 @@ Route::group(['middleware' => 'cors'], function () {
 // Comment Delete
     Route::get('commentCRUD/{id}/delete', 'CommentCRUDController@destroy');
 
+// Get comments by ticket id.
+    Route::get('commentCRUD/{id}/comments', 'CommentCRUDController@getCommentsByTicketId');
+
 
 });

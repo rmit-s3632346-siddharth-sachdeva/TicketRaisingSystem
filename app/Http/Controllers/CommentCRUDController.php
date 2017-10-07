@@ -82,4 +82,12 @@ class CommentCRUDController extends Controller
         return array("status" => "SUCCESS");;
     }
 
+    public function getCommentsByTicketId($id){
+
+        $comments = Comment::where('ticketId',$id)->get();
+
+        return $comments;
+
+    }
+
 }
