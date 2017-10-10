@@ -65,7 +65,7 @@
             </div>
             <div class="panel-body">
                 <p><b><u>{{$comment->emailId}}</u></b></p>
-                <p>{{$comment->description}}</p>
+                <p>{!! $comment->description !!}</p>
             </div>
         </div>
     @endforeach
