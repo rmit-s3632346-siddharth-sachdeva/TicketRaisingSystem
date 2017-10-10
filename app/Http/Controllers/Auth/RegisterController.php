@@ -61,6 +61,8 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+
+    //Registration field
     protected function create(array $data)
     {
 

@@ -13,6 +13,8 @@ class Cors
      * @param  \Closure  $next
      * @return mixed
      */
+
+    //Passing header with allowing cross origin flag in API response.
     public function handle($request, Closure $next)
     {
         return $next($request)

@@ -13,14 +13,15 @@ use Illuminate\Support\Facades\Auth;
 
 class ViewTicketsController extends Controller
 {
+    //Calling middleware to make sure user is logged in or not.
     public function __construct()
     {
         $this->middleware('auth');
     }
 
+    //Showing comments.
     public function index(Request $request){
 
-       // $emailId =  Session::get('emailId');
         $emailId =  Auth::id();
 
        $role = UserDetails::where('emailId', '=', $emailId) ->pluck('role');
@@ -37,10 +38,9 @@ class ViewTicketsController extends Controller
 
    }
 
-
+    //Showing comments
     public function show($ticketId)
     {
-      //  $emailId =  Session::get('emailId');
         $emailId =  Auth::id();
         session()->put('ticketId', $ticketId);
         $ticket = Ticket::where('ticketId', '=', $ticketId)->get();
@@ -50,19 +50,16 @@ class ViewTicketsController extends Controller
         return view('main.track_tickets',compact('ticket', 'commentList', 'recentTickets'));
     }
 
-
+    //Adding comments
     public function store(AddCommentRequest $request)
     {
-       /* $this->validate($request, [
-            'description' => 'required',
-        ]);*/
         $ticketId = Session::get('ticketId');
         $emailId =  Auth::id();
         //$emailId =  Session::get('emailId');
         $commentId = uniqid();
         Comment::create(array_merge($request->all(),['ticketId'=>$ticketId,'commentId'=>$commentId,'emailId'=>$emailId]));
         return redirect()->back();
-        /*return view(route('viewTickets.show', $ticketId));*/
+
     }
 
     public function update(Request $request, $ticketId )
@@ -85,13 +82,15 @@ class ViewTicketsController extends Controller
 
         return redirect()->route('viewTickets.index') ->with('success','Ticket '.$newStatus.' successfully');
     }
+
+    //Update ticket
     public function edit(Request $request, $ticketId)
     {
         Ticket::where('ticketId', $ticketId)->update(array('status'=>$request->status));
         return redirect()->back();
     }
 
-
+    //Search ticket by id.
     public function search(Request $request){
 
         $this->validate($request, [

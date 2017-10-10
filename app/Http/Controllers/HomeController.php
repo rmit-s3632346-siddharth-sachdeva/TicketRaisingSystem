@@ -21,6 +21,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //Returning home view page.
     public function getHomePage()
     {
         return view('main.home');

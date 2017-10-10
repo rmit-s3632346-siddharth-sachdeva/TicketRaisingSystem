@@ -8,12 +8,14 @@ use App\Http\Controllers\Controller;
 
 class TicketCRUDController extends Controller
 {
+    //Show all tickets
     public function index(Request $request)
     {
         $tickets= Ticket::all();
         return $tickets;
     }
 
+    //Inserting ticket into DB.
     public function store(Request $request)
     {
         try {
@@ -41,6 +43,7 @@ class TicketCRUDController extends Controller
         return array("status" => "SUCCESS");
     }
 
+    //Show ticket by id.
     public function show($id)
     {
         $ticket= Ticket::find($id);

@@ -8,12 +8,14 @@ use App\Http\Controllers\Controller;
 
 class CommentCRUDController extends Controller
 {
+    //Show all comments
     public function index(Request $request)
     {
         $comments = Comment::all();
         return $comments;
     }
 
+    //Store comment API
     public function store(Request $request)
     {
         try {
@@ -38,12 +40,14 @@ class CommentCRUDController extends Controller
         return array("status" => "SUCCESS");
     }
 
+    //Display comment by id API
     public function show($id)
     {
         $comment= Comment::find($id);
         return $comment;
     }
 
+    //Update comment API
     public function update(Request $request, $id)
     {
         try {
@@ -65,6 +69,7 @@ class CommentCRUDController extends Controller
         return array("status" => "SUCCESS");;
     }
 
+    //API - Delete comment
     public function destroy($id)
     {
         try {
@@ -82,6 +87,7 @@ class CommentCRUDController extends Controller
         return array("status" => "SUCCESS");;
     }
 
+    //API - Get all comments associated with a particular ticket id.
     public function getCommentsByTicketId($id){
 
         $comments = Comment::where('ticketId',$id)->get();
