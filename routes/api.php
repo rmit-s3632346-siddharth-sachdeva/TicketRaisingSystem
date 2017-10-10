@@ -53,5 +53,4 @@ Route::group(['middleware' => 'cors'], function () {
 // Get comments by ticket id.
     Route::get('commentCRUD/{id}/comments', 'CommentCRUDController@getCommentsByTicketId');
 
-
 });
