@@ -23,7 +23,7 @@
                 <tr>
                     <td><b> <u>Last modified:</u></b> </br>  {{$ticket[0]->updated_at}}</td>
                 </tr>
-                <tr>
+                {{--<tr>
                     <td><b> <u>Priority:</u></b> </br>
 
                         @if($ticket[0]->priority == 'H')
@@ -36,7 +36,7 @@
 
 
                     </td>
-                </tr>
+                </tr>--}}
                 @if(Session::get('role') == 'admin')
                 <tr>
                     {!! Form::open(['route' => ['viewTickets.edit',$ticket[0]->ticketId],'method'=> 'GET' ,'class' => 'form-horizontal']) !!}

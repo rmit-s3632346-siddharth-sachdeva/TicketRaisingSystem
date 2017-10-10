@@ -100,7 +100,6 @@ class ViewTicketsController extends Controller
         ]);
 
         $ticketId = $request->search;
-       // $emailId =  Session::get('emailId');
         $emailId =  Auth::id();
         $role = UserDetails::where('emailId', '=', $emailId) ->pluck('role');
 
@@ -111,9 +110,6 @@ class ViewTicketsController extends Controller
         }else{
             $ticketList= Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->where('ticketId', '=', $ticketId)->paginate(7);
             $recentTickets = Ticket::orderBy('created_at','DESC')->where('emailId', '=', $emailId)->limit(5)->get();
-         /*   return view('main.view_tickets', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);*/
-
-          /*  return redirect()->back()->with('ticketList', $ticketList)->with('recentTickets', $recentTickets);*/
 
             return view('main.view_tickets', compact('ticketList', 'recentTickets')) ->with('i', ($request->input('page', 1) - 1) * 5);
         }

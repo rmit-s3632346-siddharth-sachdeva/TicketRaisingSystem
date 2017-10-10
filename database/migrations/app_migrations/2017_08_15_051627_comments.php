@@ -18,7 +18,7 @@ class Comments extends Migration
             $table->primary('commentId');
             $table->string('description');
             $table->string('emailId');
-            $table->foreign('emailId')->references('emailId')->on('user_details')->onDelete('cascade');
+            /*$table->foreign('emailId')->references('emailId')->on('user_details')->onDelete('cascade');*/
             $table->string('ticketId');
             $table->foreign('ticketId')->references('ticketId')->on('tickets')->onDelete('cascade');
             $table->timestamps();

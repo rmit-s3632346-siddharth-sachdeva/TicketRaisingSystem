@@ -63,13 +63,10 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        /*var_dump($data);
-        exit;
-        $data['role'] = "user";*/
 
         return UserDetails::create([
             'firstName' => $data['firstName'],
-            'lastName' => $data['firstName'],
+            'lastName' => $data['lastName'],
             'emailId' => $data['emailId'],
             'phoneNo' => $data['phoneNo'],
             'role' => $data['role'],

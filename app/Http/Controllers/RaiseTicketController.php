@@ -21,6 +21,7 @@ class RaiseTicketController extends Controller
 
         $ticketId = uniqid();
         $status = "Pending";
+        $priority = "";
 
         if(!UserDetails::where('emailId', '=', $request->emailId)->exists()){
             UserDetails::create(array_merge($request->all(), ['password'=>'password', 'role'=>'user']));
@@ -34,7 +35,7 @@ class RaiseTicketController extends Controller
         }
         session()->put('success', 'Thanks '.$request->firstName.' for contacting us, your ticket id is '.$ticketId.', we will contact you via '.$request->preferredContact.' on '.$contact.' shortly.');
 
-        Ticket::create(array_merge($request->all(),['ticketId'=>$ticketId, 'status'=>$status]));
+        Ticket::create(array_merge($request->all(),['ticketId'=>$ticketId, 'status'=>$status, 'priority'=>$priority]));
 
         Mail::to($request->emailId)->send(new TicketRaised($request,$ticketId));
 

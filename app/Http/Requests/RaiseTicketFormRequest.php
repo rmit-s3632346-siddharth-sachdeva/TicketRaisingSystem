@@ -30,7 +30,7 @@ class RaiseTicketFormRequest extends FormRequest
             'firstName'  => 'required | alpha | max:20',
             'lastName'  => 'required | alpha | max:20',
             'subject'  => 'required | max:100',
-            'priority'  => 'required',
+            /*'priority'  => 'required',*/
             'serviceArea'  => 'required',
             'preferredContact'  => 'required',
             'description'  => 'required | max:200',

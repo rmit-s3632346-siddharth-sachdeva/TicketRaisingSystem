@@ -27,7 +27,7 @@
             <div class="form-group">
                 {!! Form::label('emailId', 'Email Id',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
-                    {!! Form::email('emailId', '', ['class' => 'form-control']) !!}
+                    {!! Form::email('emailId',  Auth::user()->emailId , ['class' => 'form-control', 'readonly' ] ) !!}
                 </div>
             </div>
             <div class="form-group">
@@ -39,14 +39,14 @@
             <div class="form-group">
                 {!! Form::label('firstName', 'First Name',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
-                    {!! Form::text('firstName', '', ['class' => 'form-control']) !!}
+                    {!! Form::text('firstName', Auth::user()->firstName, ['class' => 'form-control','readonly']) !!}
                 </div>
             </div>
 
             <div class="form-group">
                 {!! Form::label('lastName', 'Last Name',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
-                    {!! Form::text('lastName', '', ['class' => 'form-control']) !!}
+                    {!! Form::text('lastName', Auth::user()->lastName, ['class' => 'form-control','readonly']) !!}
                 </div>
             </div>
 
@@ -65,12 +65,12 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            {{--<div class="form-group">
                 {!! Form::label('priority', 'Priority',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">
                     {!! Form::select('priority', ['H' => 'High', 'M' => 'Medium', 'L' => 'Low'], 'M',['class' => 'form-control']) !!}
                 </div>
-            </div>
+            </div>--}}
             <div class="form-group">
                 {!! Form::label('serviceArea', 'Service Area',['class'=>'col-lg-2 control-label']) !!}
                 <div class="col-lg-10">

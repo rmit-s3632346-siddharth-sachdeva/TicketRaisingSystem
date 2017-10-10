@@ -35,7 +35,7 @@
                     <th>Ticket Id</th>
                     <th>Subject</th>
                     <th>Service Area</th>
-                    <th>Priority</th>
+                    {{--<th>Priority</th>--}}
                     <th>Status</th>
                 </tr>
                 </thead>
@@ -45,7 +45,7 @@
                         <td>{{ $ticket->ticketId}}</td>
                         <td>{{ $ticket->subject}}</td>
                         <td>{{ $ticket->serviceArea}}</td>
-                        <td>
+                        {{--<td>
                             @if($ticket->priority == 'H')
                                 High
                             @elseif($ticket->priority == 'M')
@@ -53,18 +53,18 @@
                             @else
                                 Low
                             @endif
-                        </td>
+                        </td>--}}
                         <td>{{ $ticket->status}}</td>
                         <td><a class="btn btn-info" href="{{ route('viewTickets.show',$ticket->ticketId) }}">Show</a>
                         </td>
                         {{--<td><a class="btn btn-primary" href="--}}{{--{{ route('productCRUD.edit',$product->id) }}--}}{{--">Edit</a></td>--}}
 
 
-                        @if($ticket->status == 'Closed')
+                    {{--    @if($ticket->status == 'Closed')
                             <td>  {!! Form::open(['method' => 'PATCH','route' => ['viewTickets.update', $ticket->ticketId ],'style'=>'display:inline']) !!}
                                 {!! Form::submit('Re-open Ticket', ['class' => 'btn btn-danger']) !!}</td>
                             {!! Form::close() !!}
-                            {{--<td><a class="btn btn-danger" disabled --}}{{--href="{{ route('viewTickets.update', $ticket) }}"--}}{{-->Ticket Closed</a></td>--}}
+                            --}}{{--<td><a class="btn btn-danger" disabled --}}{{----}}{{--href="{{ route('viewTickets.update', $ticket) }}"--}}{{----}}{{-->Ticket Closed</a></td>--}}{{--
                         @else
 
                             <td>
@@ -76,7 +76,7 @@
 
 
                         @endif
-                    </tr>
+                    </tr>--}}
                 @endforeach
                 </tbody>
             </table>
